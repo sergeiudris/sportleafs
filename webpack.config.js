@@ -87,12 +87,7 @@ const config = {
     loaders: [
       {
         test: /\.jsx?$/,
-        include: [
-          path.resolve(__dirname, './components'),
-          path.resolve(__dirname, './core'),
-          path.resolve(__dirname, './pages'),
-          path.resolve(__dirname, './main.js'),
-        ],
+        exclude: /node_modules/,
         loader: `babel-loader?${JSON.stringify(babelConfig)}`,
       },
       {
