@@ -10,6 +10,8 @@
 
 import React, { PropTypes } from 'react';
 import history from '../../core/history';
+import s from './Link.css';
+import cx from 'classnames';
 
 class Link extends React.Component {
 
@@ -49,7 +51,7 @@ class Link extends React.Component {
 
   render() {
     const { to, ...props } = this.props; // eslint-disable-line no-use-before-define
-    return <a href={history.createHref(to)} {...props} onClick={this.handleClick} />;
+    return <a className={cx(s.root)} href={history.createHref(to)} {...props} onClick={this.handleClick} />;
   }
 
 }

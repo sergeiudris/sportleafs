@@ -17,7 +17,7 @@ const webpack = require('webpack');
 
 // TODO: Update configuration settings
 const config = {
-  title: 'Moviellation',        // Your website title
+  title: 'Sportleafs',        // Your website title
   url: 'https://sportleafs.firebaseapp.com',          // Your website URL
   project: 'sportleafs',      // Firebase project. See README.md -> How to Deploy
   trackingID: 'UA-80868185-2',                 // Google Analytics Site's ID

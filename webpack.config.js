@@ -36,6 +36,9 @@ const config = {
   entry: [
     './main.js',
   ],
+  resolve: {
+    modulesDirectories: ['node_modules', 'projects']
+  },
 
   // Options affecting the output of the compilation
   output: {

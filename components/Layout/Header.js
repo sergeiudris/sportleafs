@@ -9,22 +9,35 @@
  */
 
 import React from 'react';
+import Login from '../Login';
+import Box from 'adven-ui/src/GFlexbox';
+import Navigation from '../Navigation';
 
 class Header extends React.Component {
 
   componentDidMount() {
-    window.componentHandler.upgradeElement(this.root);
+    //window.componentHandler.upgradeElement(this.root);
   }
 
   componentWillUnmount() {
-    window.componentHandler.downgradeElements(this.root);
+    //window.componentHandler.downgradeElements(this.root);
   }
 
   render() {
+    // return (
+    //   <header className="mdl-layout__header" ref={node => (this.root = node) }>
+    //     <div className="mdl-layout__header-row" {...this.props} />
+    //     <Login  />
+    //   </header>
+    // );
     return (
-      <header className="mdl-layout__header" ref={node => (this.root = node)}>
-        <div className="mdl-layout__header-row" {...this.props} />
-      </header>
+      <Box style={{ flexFlow: 'column nowrap'}}>
+        <Box  style={{ flexFlow: 'row nowrap', justifyContent: 'space-around', alignItems:'center' }} >
+          <Box style={{ flexFlow: 'row nowrap'}}><h3>SportLeafs</h3></Box>
+          <Navigation style={{ flexFlow: 'row nowrap'}}/>
+        </Box>
+        <Login style={{alignSelf:'flex-end'}}  />
+      </Box>
     );
   }
 

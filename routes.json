@@ -17,6 +17,10 @@
     "page": "./pages/about"
   },
   {
+    "path": "/sport/:sport",
+    "page": "./pages/sport"
+  },
+  {
     "path": "/tasks/:status(pending|completed)?",
     "page": "./pages/home"
   }
