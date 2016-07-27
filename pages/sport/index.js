@@ -30,11 +30,11 @@ class SportPage extends React.Component {
     document.title = title;
     twit(this);
 
-    twttr.widgets.createTimeline({
-      sourceType: "list",
-      ownerScreenName: "JoggenSerge",
-      slug: "nba"
-    }, document.getElementById("twitter"));
+    // twttr.widgets.createTimeline({
+    //   sourceType: "list",
+    //   ownerScreenName: "JoggenSerge",
+    //   slug: "nba"
+    // }, document.getElementById("twitter"));
 
   }
 
