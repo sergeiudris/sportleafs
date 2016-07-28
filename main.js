@@ -24,6 +24,8 @@ let routes = require('./routes.json'); // Loaded with utils/routes-loader.js
 const container = document.getElementById('container');
 
 function renderComponent(component) {
+  // console.log(component);
+  // ReactDOM.unmountComponentAtNode(container);
   ReactDOM.render(<Provider store={store}>{component}</Provider>, container);
 }
 

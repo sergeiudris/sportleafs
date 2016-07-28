@@ -14,11 +14,12 @@ import { createStore } from 'redux';
 // For more information visit http://redux.js.org/
 const store = createStore((state, action) => {
   // TODO: Add action handlers (aka "reduces")
-  switch (action) {
-    case 'COUNT':
-      return { ...state, count: (state.count || 0) + 1 };
+  console.log(action);
+  switch (action.type) {
+    case 'tweets':
+      return { ...state, tweets: action.tweets };
     default:
-      return state;
+      return {...state};
   }
 });
 

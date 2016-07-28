@@ -28,7 +28,12 @@ class Navigation extends React.Component {
       <Box rootType="nav" style={_extends({},this.props.style,{ flexFlow: 'row nowrap', justifyContent:'space-between' })}>
          <Link to="/">Home</Link>
           <Link to="/about">About</Link>
-          <Link to="/sport/nba">Sport</Link>
+          <Link to="/sport/nba">NBA</Link>
+          <Link to="/sport/football">Football</Link>
+          <Link to="/sport/nhl">NHL</Link>
+          <Link to="/sport/nfl">NFL</Link>
+          <Link to="/sport/tennis">Tennis</Link>
+          <Link to="/sport/olympics">Olympics</Link>
           <Link to="/privacy">Privacy & Terms</Link>
           <Link to="/not-found">Not Found (demo) </Link>
       </Box>
