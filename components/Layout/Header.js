@@ -9,9 +9,10 @@
  */
 
 import React from 'react';
-import Login from '../Login';
 import Box from 'adven-ui/src/GFlexbox';
 import Navigation from '../Navigation';
+import FirebaseLogins from 'firebase-logins';
+import config from '../../config.js';
 
 class Header extends React.Component {
 
@@ -30,13 +31,14 @@ class Header extends React.Component {
     //     <Login  />
     //   </header>
     // );
-    return (
-      <Box style={{ flexFlow: 'column nowrap'}}>
-        <Box  style={{ flexFlow: 'row nowrap', justifyContent: 'space-around', alignItems:'center' }} >
-          <Box style={{ flexFlow: 'row nowrap'}}><h3>SportLeafs</h3></Box>
-          <Navigation style={{ flexFlow: 'row nowrap'}}/>
+
+     return (
+      <Box style={{ flexFlow: 'column nowrap' }}>
+        <Box  style={{ flexFlow: 'column nowrap' }} >
+          <Box style={{ alignSelf:'center', flexFlow:  'row nowrap' }}><h3>SportLeafs</h3></Box>
+          <FirebaseLogins config={config} google facebook twitter github/>
         </Box>
-        <Login style={{alignSelf:'flex-end'}}  />
+        <Navigation style={{ flexFlow: 'row nowrap' }}/>
       </Box>
     );
   }

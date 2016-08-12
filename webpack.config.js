@@ -37,7 +37,7 @@ const config = {
     './main.js',
   ],
   resolve: {
-    modulesDirectories: ['node_modules', 'projects']
+    modulesDirectories: ['node_modules', '.']
   },
 
   // Options affecting the output of the compilation

@@ -16,12 +16,7 @@ const ejs = require('ejs');
 const webpack = require('webpack');
 
 // TODO: Update configuration settings
-const config = {
-  title: 'Sportleafs',        // Your website title
-  url: 'https://sportleafs.firebaseapp.com',          // Your website URL
-  project: 'sportleafs',      // Firebase project. See README.md -> How to Deploy
-  trackingID: 'UA-80868185-2',                 // Google Analytics Site's ID
-};
+const config = require('./config.js')
 
 const tasks = new Map(); // The collection of automation tasks ('clean', 'build', 'publish', etc.)
 
