@@ -1,15 +1,6 @@
-/**
- * React Static Boilerplate
- * https://github.com/kriasoft/react-static-boilerplate
- *
- * Copyright © 2015-present Kriasoft, LLC. All rights reserved.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE.txt file in the root directory of this source tree.
- */
 
 import React from 'react';
-import Box from 'adven-ui/src/GFlexbox';
+require('adven-ui/css/flexbox.css');
 import {VelocityComponent, VelocityTransitionGroup} from 'velocity-react';
 import s from './Tweet.css';
 import cx from 'classnames';
@@ -31,9 +22,9 @@ class Tweet extends React.Component {
         const tweet = this.props.tweet;
         return (
             <blockquote className={cx(s.twittertweet) }>
-            <img style={{maxWidth:"48px",maxHeight:"48px"}} src={tweet.user.profile_image_url}></img>
-            <p>{tweet.text}</p>
-            - {tweet.user.name} ( @{tweet.user.screen_name} )
+                <img style={{ maxWidth: "48px", maxHeight: "48px" }} src={tweet.user.profile_image_url}></img>
+                <p>{tweet.text}</p>
+                - {tweet.user.name} ( @{tweet.user.screen_name})
             </blockquote>
         );
     }

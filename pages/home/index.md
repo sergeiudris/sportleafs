@@ -1,10 +1,9 @@
 ---
-title: React Static Boilerplate
+title: Sportleafs
 ---
 
-## Welcome!
+### This is home page of Sportleafs
 
-This is a single-page application powered by React and Material Design Lite (MDL).
 
-https://github.com/kriasoft/react-static-boilerplate
+
 

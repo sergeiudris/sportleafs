@@ -1,18 +1,11 @@
-/**
- * React Static Boilerplate
- * https://github.com/kriasoft/react-static-boilerplate
- *
- * Copyright © 2015-present Kriasoft, LLC. All rights reserved.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE.txt file in the root directory of this source tree.
- */
-
 import React from 'react';
-import Box from 'adven-ui/src/GFlexbox';
-import Navigation from '../Navigation';
+
 import FirebaseLogins from 'firebase-logins';
 import config from '../../config.js';
+require('adven-ui/css/flexbox.css');
+import Link from '../Link';
+import cx from 'classnames';
+import s from './header.css';
 
 class Header extends React.Component {
 
@@ -32,14 +25,23 @@ class Header extends React.Component {
     //   </header>
     // );
 
-     return (
-      <Box style={{ flexFlow: 'column nowrap' }}>
-        <Box  style={{ flexFlow: 'column nowrap' }} >
-          <Box style={{ alignSelf:'center', flexFlow:  'row nowrap' }}><h3>SportLeafs</h3></Box>
+    return (
+      <div className={cx("flexbox column nowrap", s.header) }>
+        <div  className="flexbox column nowrap" >
+          <Link to="/"><h3>Sportleafs</h3></Link>
           <FirebaseLogins config={config} google facebook twitter github/>
-        </Box>
-        <Navigation style={{ flexFlow: 'row nowrap' }}/>
-      </Box>
+          <nav className="flexbox row nowrap justify-content-space-around">
+            <Link to="/">Home</Link>
+            <Link to="/about">About</Link>
+            <Link to="/sport/nba">NBA</Link>
+            <Link to="/sport/football">Football</Link>
+            <Link to="/sport/nhl">NHL</Link>
+            <Link to="/sport/nfl">NFL</Link>
+            <Link to="/sport/tennis">Tennis</Link>
+            <Link to="/sport/olympics">Olympics</Link>
+          </nav>
+        </div>
+      </div>
     );
   }
 

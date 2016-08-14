@@ -1,13 +1,3 @@
-/**
- * React Static Boilerplate
- * https://github.com/kriasoft/react-static-boilerplate
- *
- * Copyright © 2015-present Kriasoft, LLC. All rights reserved.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE.txt file in the root directory of this source tree.
- */
-
 import React, { PropTypes } from 'react';
 import history from '../../core/history';
 import s from './Link.css';
@@ -38,7 +28,8 @@ class Link extends React.Component {
     }
 
     event.preventDefault();
-
+    // event.persist();
+    // console.log(event);
     if (this.props.to) {
       history.push(this.props.to);
     } else {
@@ -51,7 +42,7 @@ class Link extends React.Component {
 
   render() {
     const { to, ...props } = this.props; // eslint-disable-line no-use-before-define
-    return <a className={cx(s.root)} href={history.createHref(to)} {...props} onClick={this.handleClick} />;
+    return <a {...props} className={cx(s.root,this.props.className)} href={history.createHref(to)}  onClick={this.handleClick} />;
   }
 
 }
