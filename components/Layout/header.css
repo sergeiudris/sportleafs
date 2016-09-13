@@ -1,5 +1,27 @@
 .header{
     box-shadow:0 2px 2px 0 rgba(0,0,0,.14);
-    background-color: dodgerblue;
     border-radius: 3px;
+    position: relative;
+}
+
+.img {
+    width: 100%;
+}
+
+
+.logo {
+    width: 12em;
+    margin-left: 4em;
+    margin-right: 4em;
+}
+
+.rhs{
+    width: 100%;
+    position: relative;
+}
+
+.logins{
+    position: absolute;
+    top: 1em;
+    right: 1em;
 }
