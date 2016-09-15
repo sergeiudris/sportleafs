@@ -1,7 +1,7 @@
 
 import React from 'react';
 import Header from './Header';
-
+import Nav from './nav';
 import Footer from '../Footer';
 import UnderContruction from 'adven-ui/under-construction';
 
@@ -23,10 +23,11 @@ class Layout extends React.Component {
 
   render() {
     return (
-      <div className="flexbox column nowrap">
+      <div className={cx("flexbox column nowrap",s.root)}>
         <Header/>
         <UnderContruction />
-        <div>{this.props.children}</div>
+        <Nav />
+        <div className={s.content}>{this.props.children}</div>
         <Footer />
       </div>
     );

@@ -1,0 +1,7 @@
+.content{
+    flex: 1;
+}
+
+.root{
+    min-height: 100vh;
+}

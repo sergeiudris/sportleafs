@@ -1,13 +1,17 @@
 
 import React from 'react';
 import Layout from '../../components/Layout';
-import Tweet from '../../components/Tweet';
+import Tweet from 'adven-ui/tweet';
 import {connectToTwitterStream, changeFeed} from '../../data/twitter-openshift.js'
 import {connect} from 'react-redux';
 //import { title, html } from './index.md';
 import Json from 'adven-ui/json';
 require('adven-ui/css/flexbox.css');
 import {VelocityComponent, VelocityTransitionGroup} from 'velocity-react';
+import Animate from 'rc-animate';
+import velocity from 'velocity-animate';
+import FlipMove from 'react-flip-move';
+
 const title = 'Sport';
 
 
@@ -18,7 +22,50 @@ class SportPage extends React.Component {
     super(props);
     this.state = { tweets: [] };
   }
+  animateEnter(node, done) {
+    let ok = false;
 
+    function complete() {
+      if (!ok) {
+        ok = 1;
+        done();
+      }
+    }
+
+    velocity(node, 'slideDown', {
+      duration: 1000,
+      complete,
+    });
+    return {
+      stop() {
+        velocity(node, 'finish');
+        // velocity complete is async
+        complete();
+      },
+    };
+  }
+  animateLeave(node, done) {
+    let ok = false;
+
+    function complete() {
+      if (!ok) {
+        ok = 1;
+        done();
+      }
+    }
+
+    velocity(node, 'slideUp', {
+      duration: 1000,
+      complete,
+    });
+    return {
+      stop() {
+        velocity(node, 'finish');
+        // velocity complete is async
+        complete();
+      },
+    };
+  }
   componentDidMount() {
     document.title = title;
     connectToTwitterStream();
@@ -70,37 +117,68 @@ class SportPage extends React.Component {
     function runAnimation(i, evt) {
       this.refs["velocity" + i].runAnimation({ stop: true });
     }
-
+    const anim = {
+      enter: this.animateEnter,
+      leave: this.animateLeave,
+    };
     return (
       <Layout>
         <h1>{title}</h1>
         <h3>{this.props.params.sport}</h3>
         <input type="text" placeholder="search..." ref="search" onKeyUp={this.onKeyUp.bind(this) } />
-        <div  className="flexbox row nowrap" >
-          <VelocityTransitionGroup
-            runOnMount
-            enter={{ animation: { opacity: 1, } }}
-            leave={{ animation: { opacity: 0 } }}
-            duration={100}
-            component={'div'}
-            className="flexbox column nowrap"
-            >
+        <div  className="flexbox column nowrap" >
+          <FlipMove duration={1000} enterLeaveAnimation="elevator" typeName="ul"  >
             {
               tweets.map((el, i, a) => {
                 return (
-                  <div key={i} className="flexbox column nowrap" >
-                    <VelocityComponent animation="callout.tada" duration={500} ref={"velocity" + i}>
-                      <Tweet tweet={el}/>
-                    </VelocityComponent>
-                  </div>
+                  // <div key={i} className="flexbox column nowrap" >
+                  //   <VelocityComponent animation="callout.tada" duration={500} ref={"velocity" + i}>
+                  //     <Tweet tweet={el}/>
+                  //   </VelocityComponent>
+                  // </div>
+                  <Tweet  key={`${el.timestamp_ms}${el.id_str}`} tweet={el}/>
                 );
               })
             }
-          </VelocityTransitionGroup>
+          </FlipMove>
           <div id="twitter" style={{ width: "200px", height: "500px" }}></div>
         </div>
       </Layout>
     );
+
+    // return (
+    //   <Layout>
+    //     <h1>{title}</h1>
+    //     <h3>{this.props.params.sport}</h3>
+    //     <input type="text" placeholder="search..." ref="search" onKeyUp={this.onKeyUp.bind(this) } />
+    //     <div  className="flexbox row nowrap" >
+    //       <VelocityTransitionGroup
+    //         runOnMount
+    //         enter={{ animation: 'slideDown' }}
+    //         leave={{ animation: 'slideUp' }}
+    //         duration={7000}
+    //         component={'div'}
+    //         className="flexbox column nowrap"
+    //         >
+    //         {
+    //           tweets.map((el, i, a) => {
+    //             return (
+    //               // <div key={i} className="flexbox column nowrap" >
+    //               //   <VelocityComponent animation="callout.tada" duration={500} ref={"velocity" + i}>
+    //               //     <Tweet tweet={el}/>
+    //               //   </VelocityComponent>
+    //               // </div>
+    //               <div key={el.id_str} className="flexbox column nowrap" >
+    //                 <Tweet tweet={el}/>
+    //               </div>
+    //             );
+    //           })
+    //         }
+    //       </VelocityTransitionGroup>
+    //       <div id="twitter" style={{ width: "200px", height: "500px" }}></div>
+    //     </div>
+    //   </Layout>
+    // );
   }
 
 }

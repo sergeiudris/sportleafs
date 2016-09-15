@@ -24,7 +24,7 @@ function connectToTwitterStream() {
     });
     socket.on('tweet', function (tweet) {
         console.log(tweet);
-        store.dispatch({ type: "tweets", tweets: [tweet, ...store.getState().tweets || []] });
+        store.dispatch({ type: "tweets", tweets: [tweet, ...store.getState().tweets || []].splice(0,10) });
         //context.setState({ tweets: [tweet, ...context.state.tweets].splice(0, 10) })
     });
 
