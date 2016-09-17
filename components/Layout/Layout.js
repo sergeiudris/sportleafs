@@ -8,7 +8,8 @@ import UnderContruction from 'adven-ui/under-construction';
 import Link from '../Link';
 import s from './Layout.css';
 require('adven-ui/css/flexbox.css');
-require('adven-ui/css/global.css');
+require('adven-ui/css/normalize.scss');
+require('adven-ui/css/global.scss');
 import cx from 'classnames';
 
 class Layout extends React.Component {
@@ -23,7 +24,7 @@ class Layout extends React.Component {
 
   render() {
     return (
-      <div className={cx("flexbox column nowrap",s.root)}>
+      <div className={cx("flexbox column nowrap", s.root) }>
         <Header/>
         <UnderContruction />
         <Nav />

@@ -54,7 +54,7 @@ const config = {
 
   // Developer tool to enhance debugging, source maps
   // http://webpack.github.io/docs/configuration.html#devtool
-  devtool: isDebug ? 'source-map' : false,
+  // devtool: isDebug ? 'source-map' : false,
 
   // What information should be printed to the console
   stats: {
@@ -94,7 +94,12 @@ const config = {
         loader: `babel-loader?${JSON.stringify(babelConfig)}`,
       },
       {
+        test: /\.scss$/,
+        loader: 'style!css!sass'
+      },
+      {
         test: /\.css/,
+        // exclude: /adven-ui\/css/,
         loaders: [
           'style-loader',
           `css-loader?${JSON.stringify({
@@ -105,9 +110,10 @@ const config = {
             // CSS Nano http://cssnano.co/options/
             minimize: !isDebug,
           })}`,
-          'postcss-loader',
+          'postcss'
         ],
       },
+
       {
         test: /\.json$/,
         exclude: [

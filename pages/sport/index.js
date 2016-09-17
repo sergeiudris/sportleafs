@@ -1,20 +1,19 @@
 
 import React from 'react';
 import Layout from '../../components/Layout';
-import Tweet from 'adven-ui/tweet';
 import {connectToTwitterStream, changeFeed} from '../../data/twitter-openshift.js'
 import {connect} from 'react-redux';
 //import { title, html } from './index.md';
-import Json from 'adven-ui/json';
 require('adven-ui/css/flexbox.css');
-import {VelocityComponent, VelocityTransitionGroup} from 'velocity-react';
-import Animate from 'rc-animate';
-import velocity from 'velocity-animate';
-import FlipMove from 'react-flip-move';
+//import {VelocityComponent, VelocityTransitionGroup} from 'velocity-react';
+//import Animate from 'rc-animate';
+//import velocity from 'velocity-animate';
+//import FlipMove from 'react-flip-move';
+
+import TwitterFlow from 'adven-ui/twitter-flow';
+import Switches from '../../components/switches';
 
 const title = 'Sport';
-
-
 
 class SportPage extends React.Component {
 
@@ -109,6 +108,10 @@ class SportPage extends React.Component {
     // this.setState({omdbaf: filtered.length ?filtered:null})
   }
 
+  onSportSelected(selectedSports) {
+    console.log(selectedSports);
+  }
+
   render() {
     const tweets = this.props.tweets || this.state.tweetsf || this.state.tweets || [];
     // <li key={i} className={Box.s.flexbox} >
@@ -125,24 +128,8 @@ class SportPage extends React.Component {
       <Layout>
         <h1>{title}</h1>
         <h3>{this.props.params.sport}</h3>
-        <input type="text" placeholder="search..." ref="search" onKeyUp={this.onKeyUp.bind(this) } />
-        <div  className="flexbox column nowrap" >
-          <FlipMove duration={1000} enterLeaveAnimation="elevator" typeName="ul"  >
-            {
-              tweets.map((el, i, a) => {
-                return (
-                  // <div key={i} className="flexbox column nowrap" >
-                  //   <VelocityComponent animation="callout.tada" duration={500} ref={"velocity" + i}>
-                  //     <Tweet tweet={el}/>
-                  //   </VelocityComponent>
-                  // </div>
-                  <Tweet  key={`${el.timestamp_ms}${el.id_str}`} tweet={el}/>
-                );
-              })
-            }
-          </FlipMove>
-          <div id="twitter" style={{ width: "200px", height: "500px" }}></div>
-        </div>
+        <Switches  onChange={this.onSportSelected.bind(this) }/>
+        <TwitterFlow tweets={tweets} />
       </Layout>
     );
 

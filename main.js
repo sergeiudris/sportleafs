@@ -21,7 +21,7 @@ import router from './core/router';
 import history from './core/history';
 
 let routes = require('./routes.json'); // Loaded with utils/routes-loader.js
-const container = document.getElementById('container');
+const container = document.getElementById('render-target');
 
 function renderComponent(component) {
   // console.log(component);
