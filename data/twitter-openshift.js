@@ -17,38 +17,54 @@ function connectToTwitterStream() {
     socket.on('connect', function () {
         console.log("connected");
         //socket.emit("message", "some message");
+        // socket.emit('themes', Object.keys(store.getState().sports).filter((p) => store.getState().sports[p]), function (tweets) {
+        //     console.log(tweets);
+        //     // console.log(Object.keys(tweets).reduce((p, c) => {
+        //     //     return p.concat(tweets[c]);
+        //     // }, []));
+        //     const result = [...Object.keys(tweets).reduce((p, c) => {
+        //             return p.concat(tweets[c].slice(-1));
+        //         }, [])].filter((e, i, a) => {
+        //             for (let t of a) {
+        //                 if (t.id_str === e.id_str) {
+        //                     return true;
+        //                 }
+        //             }
+        //             return false;
+        //         }).splice(0, 15);
+
+        //     result.sort((a,b)=> a.timestamp_ms < b.timestamp_ms )
+
+        //     store.dispatch({
+        //         type: "tweets", tweets: result
+        //     });
+        // })
     });
     socket.on('message', function (msg) {
         console.log(msg);
         //context.setState({})
     });
     socket.on('tweet', function (tweet) {
-        console.log(tweet);
-        store.dispatch({ type: "tweets", tweets: [tweet, ...store.getState().tweets || []].splice(0,10) });
+        //console.log(tweet);
+        for (var t of (store.getState().tweets || [])) {
+            if (t.id_str === tweet.id_str) {
+                return;
+            }
+        }
+        store.dispatch({ type: "tweets", tweets: [tweet, ...store.getState().tweets||[]].splice(0, 15) });
         //context.setState({ tweets: [tweet, ...context.state.tweets].splice(0, 10) })
     });
 
-   
+
 
 }
 
-function changeFeed(options){
- if (options && options.sport) {
-              console.log("otions")
+function changeFeed(options) {
+    if (options && options.sport) {
 
-        socket.emit('themes', options.sport, function (tweets) {
-            // console.log(tweets);
-            // console.log(Object.keys(tweets).reduce((p, c) => {
-            //     return p.concat(tweets[c]);
-            // }, []));
-            store.dispatch({
-                type: "tweets", tweets: [...Object.keys(tweets).reduce((p, c) => {
-                    return p.concat(tweets[c]);
-                }, [])].splice(0, 10)
-            });
-        })
+        socket.emit('themes', options.sport)
     }
 }
 
 
-module.exports = {changeFeed, connectToTwitterStream }; 
+module.exports = { changeFeed, connectToTwitterStream }; 

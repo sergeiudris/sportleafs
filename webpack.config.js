@@ -49,12 +49,13 @@ const config = {
     sourcePrefix: '  ',
   },
 
+
   // Switch loaders to debug or release mode
   debug: isDebug,
 
   // Developer tool to enhance debugging, source maps
   // http://webpack.github.io/docs/configuration.html#devtool
-  // devtool: isDebug ? 'source-map' : false,
+   devtool: isDebug ? 'source-map' : false,
 
   // What information should be printed to the console
   stats: {

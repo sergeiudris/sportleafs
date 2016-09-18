@@ -24,16 +24,18 @@ class Nav extends React.Component {
         //   </header>
         // );
 
+        //<Link to="/sport/nba">NBA</Link>
+        // <Link to="/sport/football">Football</Link>
+        // <Link to="/sport/nhl">NHL</Link>
+        // <Link to="/sport/nfl">NFL</Link>
+        // <Link to="/sport/tennis">Tennis</Link>
+        // <Link to="/sport/olympics">Olympics</Link>
+
         return (
             <nav className="flexbox row nowrap justify-content-space-around">
                 <Link to="/">Home</Link>
                 <Link to="/about">About</Link>
-                <Link to="/sport/nba">NBA</Link>
-                <Link to="/sport/football">Football</Link>
-                <Link to="/sport/nhl">NHL</Link>
-                <Link to="/sport/nfl">NFL</Link>
-                <Link to="/sport/tennis">Tennis</Link>
-                <Link to="/sport/olympics">Olympics</Link>
+                <Link to="/tweets">Tweets</Link>
             </nav>
         );
     }

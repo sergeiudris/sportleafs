@@ -12,64 +12,43 @@ require('adven-ui/css/flexbox.css');
 
 import TwitterFlow from 'adven-ui/twitter-flow';
 import Switches from '../../components/switches';
+import Message from '../../components/message';
+
+import s from './tweets.css';
+import cx from 'classnames';
+import Button from 'adven-ui/button';
 
 const title = 'Sport';
 
-class SportPage extends React.Component {
+class TweetsPage extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = { tweets: [] };
-  }
-  animateEnter(node, done) {
-    let ok = false;
-
-    function complete() {
-      if (!ok) {
-        ok = 1;
-        done();
-      }
-    }
-
-    velocity(node, 'slideDown', {
-      duration: 1000,
-      complete,
-    });
-    return {
-      stop() {
-        velocity(node, 'finish');
-        // velocity complete is async
-        complete();
-      },
+    this.state = {
+      tweets: [],
+      sports: {}
     };
   }
-  animateLeave(node, done) {
-    let ok = false;
 
-    function complete() {
-      if (!ok) {
-        ok = 1;
-        done();
-      }
-    }
+  static propTypes = {
 
-    velocity(node, 'slideUp', {
-      duration: 1000,
-      complete,
-    });
-    return {
-      stop() {
-        velocity(node, 'finish');
-        // velocity complete is async
-        complete();
-      },
-    };
-  }
+  };
+
+  static contextTypes = {
+    store: React.PropTypes.object
+  };
+
   componentDidMount() {
     document.title = title;
     connectToTwitterStream();
-    changeFeed({ sport: [this.props.params.sport] })
-    console.log("did mount")
+   // console.log("did mount")
+
+    this.setState({
+      sports: this.context.store.getState().sports || {},
+    }, () => {
+      this.changeFeed();
+    })
+
     // twttr.widgets.createTimeline({
     //   sourceType: "list",
     //   ownerScreenName: "JoggenSerge",
@@ -78,26 +57,29 @@ class SportPage extends React.Component {
 
   }
   componentWillReceiveProps(nextProps) {
-    console.log('will receive props');
+    //console.log('will receive props');
 
-    console.log(this.props.params.sport);
-    console.log(nextProps.params.sport);
+    // console.log(this.props.params.sport);
+    // console.log(nextProps.params.sport);
 
-    if (this.props.params.sport != nextProps.params.sport) {
-      changeFeed({ sport: [nextProps.params.sport] })
-    }
+
   }
   componentWillUpdate(nextProps, nextState) {
     // connect(this);
-    console.log('will update');
+   // console.log('will update');
   }
   componentWillUnmount(nextProps, nextState) {
-    console.log('will unmount');
+    //console.log('will unmount');
   }
 
 
-  onClick(e) {
-
+  onClick(button, evt) {
+        this.setState({
+          sports: {...this.state.sports, [button]:this.refs[button].state.pressed }
+    }, () => {
+      this.context.store.dispatch({ type: 'localStorage', sports: this.state.sports })
+      this.changeFeed();
+    });
   }
 
   onKeyUp(e) {
@@ -108,8 +90,9 @@ class SportPage extends React.Component {
     // this.setState({omdbaf: filtered.length ?filtered:null})
   }
 
-  onSportSelected(selectedSports) {
-    console.log(selectedSports);
+  changeFeed() {
+    //console.log('changin sports',this.state.sports)
+    changeFeed({ sport: Object.keys(this.state.sports).filter((p) => this.state.sports[p]) });
   }
 
   render() {
@@ -126,9 +109,13 @@ class SportPage extends React.Component {
     };
     return (
       <Layout>
-        <h1>{title}</h1>
-        <h3>{this.props.params.sport}</h3>
-        <Switches  onChange={this.onSportSelected.bind(this) }/>
+        <div  className={cx("flexbox row wrap justify-content-center", s.switches, this.props.className) } >
+          <Button pressed={this.state.sports.nba}  ref={'nba'} text={'nba'} icon={'soccer-ball-o'} colorName={'red'} onClick={this.onClick.bind(this, 'nba') } />
+          <Button pressed={this.state.sports.football}   ref={'football'} text={'football'} icon={'soccer-ball-o'} colorName={'green'} onClick={this.onClick.bind(this, 'football') } />
+          <Button pressed={this.state.sports.nhl}   ref={'nhl'} text={'nhl'} icon={'soccer-ball-o'} colorName={'blue'} onClick={this.onClick.bind(this, 'nhl') } />
+          <Button pressed={this.state.sports.tennis}   ref={'tennis'} text={'tennis'} icon={'soccer-ball-o'} colorName={'orange'} onClick={this.onClick.bind(this, 'tennis') } />
+          <Button pressed={this.state.sports.nfl}   ref={'nfl'} text={'nfl'} icon={'soccer-ball-o'} colorName={'navy'} onClick={this.onClick.bind(this, 'nfl') } />
+        </div>
         <TwitterFlow tweets={tweets} />
       </Layout>
     );
@@ -170,4 +157,4 @@ class SportPage extends React.Component {
 
 }
 
-export default connect((state) => { return { tweets: state.tweets }; })(SportPage);
+export default connect((state) => { return { tweets: state.tweets }; })(TweetsPage);

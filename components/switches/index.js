@@ -9,14 +9,19 @@ import Button from 'adven-ui/button';
 class Switches extends React.Component {
 
     static propTypes = {
-        buttons: React.PropTypes.array.isRequired,
         className: React.PropTypes.string
     };
 
     constructor(props) {
         super(props);
         this.state = {
-            selected: {}
+            selected: {
+                nba: true,
+                football: true,
+                nhl: true,
+                nfl: true,
+                tennis: true
+            }
         };
     }
 
@@ -33,25 +38,25 @@ class Switches extends React.Component {
     onClick(button, evt) {
         this.setState({
             selected: {...this.state.selected, [button]:this.refs[button].state.pressed }
-        }, () => {
-            if (this.props.onChange) {
-                this.props.onChange(Object.keys(this.state.selected).filter((p) => this.state.selected[p]));
-            }
-        });
+}, () => {
+    if (this.props.onChange) {
+        this.props.onChange(Object.keys(this.state.selected).filter((p) => this.state.selected[p]));
+    }
+});
 
     }
 
-    render() {
-        return (
-            <div  className={cx("flexbox row nowrap", s.root) } >
-                <Button switch  ref={'nba'} text={'nba'} icon={'soccer-ball-o'} colorName={'red'} onClick={this.onClick.bind(this, 'nba') } />
-                <Button switch  ref={'football'} text={'football'} icon={'soccer-ball-o'} colorName={'green'} onClick={this.onClick.bind(this, 'football') } />
-                <Button switch  ref={'nhl'} text={'nhl'} icon={'soccer-ball-o'} colorName={'blue'} onClick={this.onClick.bind(this, 'nhl') } />
-                <Button switch  ref={'tennis'} text={'tennis'} icon={'soccer-ball-o'} colorName={'orange'} onClick={this.onClick.bind(this, 'tennis') } />
-                <Button switch  ref={'nfl'} text={'nfl'} icon={'soccer-ball-o'} colorName={'navy'} onClick={this.onClick.bind(this, 'nfl') } />
-            </div>
-        );
-    }
+render() {
+    return (
+        <div  className={cx("flexbox row wrap justify-content-center", s.root, this.props.className) } >
+            <Button switch  ref={'nba'} text={'nba'} icon={'soccer-ball-o'} colorName={'red'} onClick={this.onClick.bind(this, 'nba') } />
+            <Button switch  ref={'football'} text={'football'} icon={'soccer-ball-o'} colorName={'green'} onClick={this.onClick.bind(this, 'football') } />
+            <Button switch  ref={'nhl'} text={'nhl'} icon={'soccer-ball-o'} colorName={'blue'} onClick={this.onClick.bind(this, 'nhl') } />
+            <Button switch  ref={'tennis'} text={'tennis'} icon={'soccer-ball-o'} colorName={'orange'} onClick={this.onClick.bind(this, 'tennis') } />
+            <Button switch  ref={'nfl'} text={'nfl'} icon={'soccer-ball-o'} colorName={'navy'} onClick={this.onClick.bind(this, 'nfl') } />
+        </div>
+    );
+}
 
 }
 

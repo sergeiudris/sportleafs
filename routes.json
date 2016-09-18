@@ -3,8 +3,7 @@
     "path": "/",
     "page": "./pages/home",
     "chunk": "main",
-    "data": {
-    }
+    "data": {}
   },
   {
     "path": "/error",
@@ -16,8 +15,12 @@
     "page": "./pages/about"
   },
   {
-    "path": "/sport/:sport",
-    "page": "./pages/sport"
+    "path": "/tweets",
+    "page": "./pages/tweets"
+  },
+  {
+    "path": "/tweets/:sport",
+    "page": "./pages/tweets"
   },
   {
     "path": "/tasks/:status(pending|completed)?",

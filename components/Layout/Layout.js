@@ -11,7 +11,7 @@ require('adven-ui/css/flexbox.css');
 require('adven-ui/css/normalize.scss');
 require('adven-ui/css/global.scss');
 import cx from 'classnames';
-
+import Message from '../message';
 class Layout extends React.Component {
 
   componentDidMount() {
@@ -26,8 +26,8 @@ class Layout extends React.Component {
     return (
       <div className={cx("flexbox column nowrap", s.root) }>
         <Header/>
-        <UnderContruction />
         <Nav />
+        <Message />
         <div className={s.content}>{this.props.children}</div>
         <Footer />
       </div>
