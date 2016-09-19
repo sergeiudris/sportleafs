@@ -10,6 +10,7 @@ import logo from '../../img/sportleafs-1024.png'
 
 require('adven-ui/css/flexbox.css');
 require('adven-ui/css/sizes.css');
+import Nav from '../navigation';
 
 class Header extends React.Component {
 
@@ -37,7 +38,9 @@ class Header extends React.Component {
             <FirebaseLogins config={config} className={s.logins}  google facebook twitter github/>
           </div>
         </div>
-       
+        <hr className={s.hr}/>
+        <Nav className={cx("flexbox row wrap justify-content-space-around", s.nav) } />
+        <hr className={s.hr}/>
       </div>
     );
   }

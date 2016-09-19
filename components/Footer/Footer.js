@@ -3,14 +3,20 @@ import Link from '../Link';
 require('adven-ui/css/flexbox.css');
 import s from './footer.css';
 import cx from 'classnames';
+import Nav from '../navigation';
 
 function Footer() {
   return (
-    <footer className="flexbox column nowrap">
-      <nav className={cx("flexbox column nowrap align-self-center",s.nav)}>
-        <Link className={s.link} to="/">home</Link>
-        <Link className={s.link} to="/about">about</Link>
-      </nav>
+    <footer className={cx("flexbox column nowrap align-items-center", s.footer) }>
+      <hr className={s.hr}/>
+      <Nav className="flexbox row wrap justify-content-center" />
+      <span className={cx('',s.copyright)}>
+      <i className="fa fa-copyright"></i>
+      &nbsp;
+      2016&nbsp;-
+      &nbsp;
+      serge-joggen
+      </span>
     </footer>
   );
 }

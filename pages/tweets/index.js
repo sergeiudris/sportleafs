@@ -109,7 +109,7 @@ class TweetsPage extends React.Component {
     };
     return (
       <Layout>
-        <div  className={cx("flexbox row wrap justify-content-center", s.switches, this.props.className) } >
+        <div  className={cx("flexbox row wrap justify-content-center", s.buttons, this.props.className) } >
           <Button pressed={this.state.sports.nba}  ref={'nba'} text={'nba'} icon={'soccer-ball-o'} colorName={'red'} onClick={this.onClick.bind(this, 'nba') } />
           <Button pressed={this.state.sports.football}   ref={'football'} text={'football'} icon={'soccer-ball-o'} colorName={'green'} onClick={this.onClick.bind(this, 'football') } />
           <Button pressed={this.state.sports.nhl}   ref={'nhl'} text={'nhl'} icon={'soccer-ball-o'} colorName={'blue'} onClick={this.onClick.bind(this, 'nhl') } />

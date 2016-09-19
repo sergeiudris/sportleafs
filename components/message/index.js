@@ -25,7 +25,7 @@ class Message extends React.Component {
     componentDidMount() {
         if (this.context.store) {
             this.setState({
-                style: this.context.store.getState().style
+                style: this.context.store.getState().constructionMessageStyle
             });
         }
     }
@@ -44,9 +44,10 @@ class Message extends React.Component {
             style: style
         });
         if (this.context.store) {
-            this.context.store.dispatch({ type: 'default', style: style });
+            this.context.store.dispatch({ type: 'default', constructionMessageStyle: style });
         }
     }
+    
     // this.refs.root.style.transition = 'transform 1s,padding-top 1s, padding-bottom 1s,height 1s';
     // this.refs.root.style.transformOrigin = 'top';
     // this.refs.root.style.transform = 'scaleY(0)';

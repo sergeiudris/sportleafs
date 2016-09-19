@@ -1,7 +1,7 @@
 [
   {
     "path": "/",
-    "page": "./pages/home",
+    "page": "./pages/tweets",
     "chunk": "main",
     "data": {}
   },
@@ -11,8 +11,12 @@
     "chunk": "main"
   },
   {
-    "path": "/about",
-    "page": "./pages/about"
+    "path": "/info",
+    "page": "./pages/info"
+  },
+  {
+    "path": "/sports",
+    "page": "./pages/tweets"
   },
   {
     "path": "/tweets",

@@ -45,7 +45,7 @@ function connectToTwitterStream() {
         //context.setState({})
     });
     socket.on('tweet', function (tweet) {
-        //console.log(tweet);
+        // console.log(tweet);
         for (var t of (store.getState().tweets || [])) {
             if (t.id_str === tweet.id_str) {
                 return;
