@@ -55,7 +55,7 @@ const config = {
 
   // Developer tool to enhance debugging, source maps
   // http://webpack.github.io/docs/configuration.html#devtool
-   devtool: isDebug ? 'source-map' : false,
+  devtool: isDebug ? 'source-map' : false,
 
   // What information should be printed to the console
   stats: {
@@ -137,13 +137,19 @@ const config = {
         loader: path.resolve(__dirname, './utils/markdown-loader.js'),
       },
       {
-        test: /\.(png|jpg|jpeg|gif|svg|woff|woff2)$/,
+        test: /\.(png|jpg|jpeg|gif|svg)(\?.*)?$/,
         loader: 'url-loader?limit=10000',
       },
       {
-        test: /\.(eot|ttf|wav|mp3)$/,
+        test: /\.woff(2)?(\?.*)?$/,
+        loader: "url-loader?limit=10000&mimetype=application/font-woff"
+      },
+
+      {
+        test: /\.(eot|ttf|wav|mp3)(\?.*)?$/,
         loader: 'file-loader',
       },
+
     ],
   },
 

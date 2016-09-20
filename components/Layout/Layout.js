@@ -10,6 +10,7 @@ import s from './Layout.css';
 require('adven-ui/css/flexbox.css');
 require('adven-ui/css/normalize.scss');
 require('adven-ui/css/global.scss');
+require('font-awesome/scss/font-awesome.scss');
 import cx from 'classnames';
 import Message from '../message';
 class Layout extends React.Component {
