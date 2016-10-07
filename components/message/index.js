@@ -62,11 +62,11 @@ class Message extends React.Component {
                 <div className="flexbox row wrap justify-content-center align-items-center">
                     <span>the website is currently under</span>
                     <span>construction</span>
-                    <i className="fa fa-code"></i>
+                    <i className="fa fa-code" />
                 </div>
                 <div className="flexbox row wrap justify-content-center align-items-center">
                     <span>some</span>
-                    <i className="fa fa-twitter"></i>
+                    <i className="fa fa-twitter" />
                     <span>stream in the meanwhile...</span>
                 </div>
 

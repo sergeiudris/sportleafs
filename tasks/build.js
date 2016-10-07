@@ -16,7 +16,7 @@ module.exports = {
     return Promise.resolve()
             .then(() => run(clean))
             .then(() => run(compile))
-            .then((stats) => run(html, { scripts: [`./dist/${stats.compilation.chunks.find(chunck => chunck.name === 'main').files[0]}`] }))
+            .then(stats => run(html, { scripts: [`./dist/${stats.compilation.chunks.find(chunck => chunck.name === 'main').files[0]}`] }))
             .then(() => run(sitemap));
   },
 };

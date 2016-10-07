@@ -1,6 +1,6 @@
 webpackJsonp([1],{
 
-/***/ 304:
+/***/ 302:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -29,17 +29,17 @@ webpackJsonp([1],{
   
   var _inherits3 = _interopRequireDefault(_inherits2);
   
-  var _react = __webpack_require__(5);
+  var _react = __webpack_require__(6);
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Layout = __webpack_require__(195);
+  var _Layout = __webpack_require__(194);
   
   var _Layout2 = _interopRequireDefault(_Layout);
   
-  var _index = __webpack_require__(800);
+  var _index = __webpack_require__(791);
   
-  var _info = __webpack_require__(790);
+  var _info = __webpack_require__(780);
   
   var _info2 = _interopRequireDefault(_info);
   
@@ -56,7 +56,7 @@ webpackJsonp([1],{
   
     function InfoPage() {
       (0, _classCallCheck3.default)(this, InfoPage);
-      return (0, _possibleConstructorReturn3.default)(this, (0, _getPrototypeOf2.default)(InfoPage).apply(this, arguments));
+      return (0, _possibleConstructorReturn3.default)(this, (InfoPage.__proto__ || (0, _getPrototypeOf2.default)(InfoPage)).apply(this, arguments));
     }
   
     (0, _createClass3.default)(InfoPage, [{
@@ -76,7 +76,7 @@ webpackJsonp([1],{
             _react2.default.createElement(
               'div',
               null,
-              'powered by:  ',
+              'powered by: \xA0',
               _react2.default.createElement(
                 'span',
                 { className: _info2.default.name },
@@ -88,11 +88,11 @@ webpackJsonp([1],{
             _react2.default.createElement(
               'div',
               null,
-              'contact:  ',
+              'contact: \xA0',
               _react2.default.createElement(
                 'span',
                 { className: _info2.default.name },
-                'serge.joggen@gmail.com  '
+                'serge.joggen@gmail.com                                '
               )
             )
           )
@@ -106,10 +106,10 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 726:
+/***/ 725:
 /***/ function(module, exports, __webpack_require__) {
 
-  exports = module.exports = __webpack_require__(19)();
+  exports = module.exports = __webpack_require__(18)();
   // imports
   
   
@@ -124,16 +124,16 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 790:
+/***/ 780:
 /***/ function(module, exports, __webpack_require__) {
 
   // style-loader: Adds some css to the DOM by adding a <style> tag
   
   // load the styles
-  var content = __webpack_require__(726);
+  var content = __webpack_require__(725);
   if(typeof content === 'string') content = [[module.id, content, '']];
   // add the styles to the DOM
-  var update = __webpack_require__(20)(content, {});
+  var update = __webpack_require__(19)(content, {});
   if(content.locals) module.exports = content.locals;
   // Hot Module Replacement
   if(false) {
@@ -151,7 +151,7 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 800:
+/***/ 791:
 /***/ function(module, exports) {
 
   module.exports = {"title":"About","html":"<h4>Sport as a web.</h4>\n<h5>Project is created and maintained by <a href=\"mailto:serge.joggen@gmail.com\">serge.joggen@gmail.com</a></h5>\n"};
@@ -159,4 +159,4 @@ webpackJsonp([1],{
 /***/ }
 
 });
-//# sourceMappingURL=1.js.map?cb7d327e70176be799e8
+//# sourceMappingURL=1.js.map?2468aac12e4ebc88ffa4

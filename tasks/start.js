@@ -31,26 +31,26 @@ module.exports = {
       app.use(webpackHotMiddleware(compiler));
 
       compiler.plugin('done', stats =>
-                run(html, {
-                  scripts: [`./dist/${stats.compilation.chunks.find(chunk => chunk.name === 'main').files[0]}`],
-                }).then(() => {
-                  if (++count === 1) {
-                    app.use(express.static(path.join(__dirname, '../public')));
+        run(html, {
+          scripts: [`./dist/${stats.compilation.chunks.find(chunk => chunk.name === 'main').files[0]}`],
+        }).then(() => {
+          if (++count === 1) {
+            app.use(express.static(path.join(__dirname, '../public')));
 
-                        // app.get("*", (req, res) => {
-                        //     res.sendFile(path.join(__dirname, '../demo/index.html'));
-                        // })
+            app.get('*', (req, res) => {
+              res.sendFile(path.join(__dirname, '../public/index.html'));
+            });
 
-                    app.listen(port, (error) => {
-                      if (error) {
-                        console.error(error);
-                      } else {
-                        console.info(`Server is running. open http://localhost:${port}/ in your browser `);
-                      }
-                    });
-                  }
-                })
-            );
+            app.listen(port, (error) => {
+              if (error) {
+                console.error(error);
+              } else {
+                console.info(`Server is running. open http://localhost:${port}/ in your browser `);
+              }
+            });
+          }
+        })
+      );
     });
   },
 };

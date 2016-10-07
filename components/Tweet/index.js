@@ -22,7 +22,7 @@ class Tweet extends React.Component {
     const tweet = this.props.tweet;
     return (
             <blockquote className={cx(s.twittertweet)}>
-                <img style={{ maxWidth: '48px', maxHeight: '48px' }} src={tweet.user.profile_image_url}></img>
+                <img style={{ maxWidth: '48px', maxHeight: '48px' }} src={tweet.user.profile_image_url} />
                 <p>{tweet.text}</p>
                 - {tweet.user.name} ( @{tweet.user.screen_name})
             </blockquote>

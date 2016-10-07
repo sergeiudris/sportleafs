@@ -24,7 +24,7 @@ class ErrorPage extends React.Component {
       'Page Not Found' : 'Error';
   }
 
-  goBack = event => {
+  goBack = (event) => {
     event.preventDefault();
     history.goBack();
   };

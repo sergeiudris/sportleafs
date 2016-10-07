@@ -15,7 +15,7 @@ module.exports = {
               project: config.project,
               cwd: path.join(__dirname, '../'),
             }))
-            .then(() => { setTimeout(() => process.exit()); });
+            .then(() =>  setTimeout(() => process.exit()));
   },
 };
 

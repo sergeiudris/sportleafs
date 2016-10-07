@@ -91,7 +91,7 @@ class TweetsPage extends React.Component {
 
   changeFeed() {
     // console.log('changin sports',this.state.sports)
-    changeFeed({ sport: Object.keys(this.state.sports).filter((p) => this.state.sports[p]) });
+    changeFeed({ sport: Object.keys(this.state.sports).filter(p => this.state.sports[p]) });
   }
 
   render() {

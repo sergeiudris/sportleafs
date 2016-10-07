@@ -11,7 +11,7 @@ function Footer() {
       <hr className={s.hr} />
       <Nav className="flexbox row wrap justify-content-center" />
       <span className={cx('', s.copyright)}>
-      <i className="fa fa-copyright"></i>
+      <i className="fa fa-copyright" />
       &nbsp;
       2016&nbsp;-
       &nbsp;

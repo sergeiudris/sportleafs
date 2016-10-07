@@ -1,6 +1,6 @@
 webpackJsonp([2],{
 
-/***/ 303:
+/***/ 301:
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -29,32 +29,32 @@ webpackJsonp([2],{
   
   var _inherits3 = _interopRequireDefault(_inherits2);
   
-  var _react = __webpack_require__(5);
+  var _react = __webpack_require__(6);
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Layout = __webpack_require__(195);
+  var _Layout = __webpack_require__(194);
   
   var _Layout2 = _interopRequireDefault(_Layout);
   
-  var _Link = __webpack_require__(101);
+  var _Link = __webpack_require__(100);
   
   var _Link2 = _interopRequireDefault(_Link);
   
-  var _index = __webpack_require__(799);
+  var _index = __webpack_require__(790);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
   __webpack_require__(61);
   
-  //require('./scss/main.scss');
+  // require('./scss/main.scss');
   
   var HomePage = function (_React$Component) {
     (0, _inherits3.default)(HomePage, _React$Component);
   
     function HomePage() {
       (0, _classCallCheck3.default)(this, HomePage);
-      return (0, _possibleConstructorReturn3.default)(this, (0, _getPrototypeOf2.default)(HomePage).apply(this, arguments));
+      return (0, _possibleConstructorReturn3.default)(this, (HomePage.__proto__ || (0, _getPrototypeOf2.default)(HomePage)).apply(this, arguments));
     }
   
     (0, _createClass3.default)(HomePage, [{
@@ -65,7 +65,7 @@ webpackJsonp([2],{
     }, {
       key: 'render',
       value: function render() {
-        return(
+        return (
           //           <div className="app">
           //         <section id="main-content">
           // <div id="home">
@@ -82,6 +82,7 @@ webpackJsonp([2],{
   
           //       <p>Oh, and it does some other cool stuff too.</p>
           //     </section>
+  
   
           //     <div className="text-right">
           //       <a href='https://github.com/joshwcomeau/react-flip-move' className="button-toggle large">
@@ -109,7 +110,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 799:
+/***/ 790:
 /***/ function(module, exports) {
 
   module.exports = {"title":"Sportleafs","html":"<h3>This is home page of Sportleafs</h3>\n"};
@@ -117,4 +118,4 @@ webpackJsonp([2],{
 /***/ }
 
 });
-//# sourceMappingURL=2.js.map?46abb0ff8a49021b8038
+//# sourceMappingURL=2.js.map?4fc1890b7e2bee5329d5

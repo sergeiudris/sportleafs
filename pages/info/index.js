@@ -21,14 +21,14 @@ class InfoPage extends React.Component {
           <div >
             powered by: &nbsp;
             <span className={s.name}>
-              <i className="fa fa-battery-full"></i>
-              <i className="fa fa-battery-full"></i>
-              <i className="fa fa-battery-full"></i>
+              <i className="fa fa-battery-full" />
+              <i className="fa fa-battery-full" />
+              <i className="fa fa-battery-full" />
             </span>
           </div>
           <div >
             contact: &nbsp;
-            <span className={s.name}>serge.joggen@gmail.com            </span>
+            <span className={s.name}>serge.joggen@gmail.com                                </span>
           </div>
         </section>
       </Layout>

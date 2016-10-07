@@ -40,7 +40,7 @@ class Switches extends React.Component {
       selected: { ...this.state.selected, [button]: this.refs[button].state.pressed },
     }, () => {
       if (this.props.onChange) {
-        this.props.onChange(Object.keys(this.state.selected).filter((p) => this.state.selected[p]));
+        this.props.onChange(Object.keys(this.state.selected).filter(p => this.state.selected[p]));
       }
     });
   }

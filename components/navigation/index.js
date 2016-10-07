@@ -33,11 +33,11 @@ class Nav extends React.Component {
 
     return (
             <nav className={cx('', this.props.className)}>
-                <Link to="/" className={cx('', s.link)}><i className="fa fa-home"></i></Link>
-                <Link to="/tweets" className={cx('', s.link)}><i className="fa fa-twitter"></i></Link>
-                <Link to="/sports" className={cx('', s.link)}><i className="fa fa-soccer-ball-o"></i></Link>
-                <Link to="/search" className={cx('', s.link)}><i className="fa fa-search"></i></Link>
-                <Link to="/info" className={cx('', s.link)}><i className="fa fa-info-circle"></i></Link>
+                <Link to="/" className={cx('', s.link)}><i className="fa fa-home" /></Link>
+                <Link to="/tweets" className={cx('', s.link)}><i className="fa fa-twitter" /></Link>
+                <Link to="/sports" className={cx('', s.link)}><i className="fa fa-soccer-ball-o" /></Link>
+                <Link to="/search" className={cx('', s.link)}><i className="fa fa-search" /></Link>
+                <Link to="/info" className={cx('', s.link)}><i className="fa fa-info-circle" /></Link>
             </nav>
         );
   }
