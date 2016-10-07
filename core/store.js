@@ -17,7 +17,7 @@ if (localStore) {
 } else {
   window.localStorage.setItem('store', JSON.stringify({}));
   localStore = {
-    sports: {}
+    sports: {},
   };
 }
 
@@ -28,11 +28,11 @@ const store = createStore((state, action) => {
   // TODO: Add action handlers (aka "reduces")
   switch (action.type) {
     case 'localStorage':
-      localStore = {...localStore, ...action};
+      localStore = { ...localStore, ...action };
       window.localStorage.setItem('store', JSON.stringify(localStore));
-      return {...localStore,...state, ...action};
+      return { ...localStore, ...state, ...action };
     default:
-      return  {...localStore,...state, ...action};
+      return { ...localStore, ...state, ...action };
   }
 });
 

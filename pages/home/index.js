@@ -6,7 +6,7 @@ import { title, html } from './index.md';
 require('adven-ui/css/flexbox.css');
 
 
-//require('./scss/main.scss');
+// require('./scss/main.scss');
 
 class HomePage extends React.Component {
 

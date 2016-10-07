@@ -9,7 +9,7 @@
  */
 
 import 'babel-polyfill';
-//import 'whatwg-fetch';
+// import 'whatwg-fetch';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -32,7 +32,7 @@ function renderComponent(component) {
 // Find and render a web page matching the current URL path,
 // if such page is not found then render an error page (see routes.json, core/router.js)
 function render(location) {
-  //console.log(location);
+  // console.log(location);
   router.resolve(routes, location)
     .then(renderComponent)
     .catch(error => router.resolve(routes, { ...location, error }).then(renderComponent));

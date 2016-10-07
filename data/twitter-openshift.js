@@ -2,21 +2,21 @@ import store from '../core/store.js';
 
 const io = require('socket.io-client');
 
-var socket;
+let socket;
 
 function connectToTwitterStream() {
-    if (socket && socket.connected) {
-        return;
-    }
+  if (socket && socket.connected) {
+    return;
+  }
 
-    //socket = io('https://46.188.58.225:2000',{secure:true});
-    //socket = io.connect('https://localhost:2443/',{reconnection: true});
+    // socket = io('https://46.188.58.225:2000',{secure:true});
+    // socket = io.connect('https://localhost:2443/',{reconnection: true});
 
-    socket = io.connect('https://twitterstream-sergejoggen.rhcloud.com:8443/', { transports: ['websocket', 'polling'], reconnection: false });
+  socket = io.connect('https://twitterstream-sergejoggen.rhcloud.com:8443/', { transports: ['websocket', 'polling'], reconnection: false });
 
-    socket.on('connect', function () {
-        console.log("connected");
-        //socket.emit("message", "some message");
+  socket.on('connect', () => {
+    console.log('connected');
+        // socket.emit("message", "some message");
         // socket.emit('themes', Object.keys(store.getState().sports).filter((p) => store.getState().sports[p]), function (tweets) {
         //     console.log(tweets);
         //     // console.log(Object.keys(tweets).reduce((p, c) => {
@@ -39,32 +39,28 @@ function connectToTwitterStream() {
         //         type: "tweets", tweets: result
         //     });
         // })
-    });
-    socket.on('message', function (msg) {
-        console.log(msg);
-        //context.setState({})
-    });
-    socket.on('tweet', function (tweet) {
+  });
+  socket.on('message', (msg) => {
+    console.log(msg);
+        // context.setState({})
+  });
+  socket.on('tweet', (tweet) => {
         // console.log(tweet);
-        for (var t of (store.getState().tweets || [])) {
-            if (t.id_str === tweet.id_str) {
-                return;
-            }
-        }
-        store.dispatch({ type: "tweets", tweets: [tweet, ...store.getState().tweets||[]].splice(0, 15) });
-        //context.setState({ tweets: [tweet, ...context.state.tweets].splice(0, 10) })
-    });
-
-
-
+    for (const t of (store.getState().tweets || [])) {
+      if (t.id_str === tweet.id_str) {
+        return;
+      }
+    }
+    store.dispatch({ type: 'tweets', tweets: [tweet, ...store.getState().tweets || []].splice(0, 15) });
+        // context.setState({ tweets: [tweet, ...context.state.tweets].splice(0, 10) })
+  });
 }
 
 function changeFeed(options) {
-    if (options && options.sport) {
-
-        socket.emit('themes', options.sport)
-    }
+  if (options && options.sport) {
+    socket.emit('themes', options.sport);
+  }
 }
 
 
-module.exports = { changeFeed, connectToTwitterStream }; 
+module.exports = { changeFeed, connectToTwitterStream };

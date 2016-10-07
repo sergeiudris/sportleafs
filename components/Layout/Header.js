@@ -6,7 +6,7 @@ import config from '../../config.js';
 import Link from '../Link';
 import cx from 'classnames';
 import s from './header.css';
-import logo from '../../img/sportleafs-1024.png'
+import logo from '../../img/sportleafs-1024.png';
 
 require('adven-ui/css/flexbox.css');
 require('adven-ui/css/sizes.css');
@@ -15,11 +15,11 @@ import Nav from '../navigation';
 class Header extends React.Component {
 
   componentDidMount() {
-    //window.componentHandler.upgradeElement(this.root);
+    // window.componentHandler.upgradeElement(this.root);
   }
 
   componentWillUnmount() {
-    //window.componentHandler.downgradeElements(this.root);
+    // window.componentHandler.downgradeElements(this.root);
   }
 
   render() {
@@ -30,17 +30,20 @@ class Header extends React.Component {
     //   </header>
     // );
 
+
+    //
+
     return (
-      <div className={cx("flexbox column nowrap", s.header) }>
+      <div className={cx('flexbox column nowrap', s.header)}>
         <div className="flexbox row nowrap">
-          <Link to="/" className={s.logo}><img  className={s.img}  src={logo} /></Link>
-          <div className={cx("flexbox row nowrap", s.rhs) }>
-            <FirebaseLogins config={config} className={s.logins}  google facebook twitter github/>
+          <Link to="/" className={s.logo}><img className={s.img} src={logo} /></Link>
+          <div className={cx('flexbox row nowrap', s.rhs)}>
+            <FirebaseLogins config={config} className={s.logins} google facebook twitter github />
           </div>
         </div>
-        <hr className={s.hr}/>
-        <Nav className={cx("flexbox row wrap justify-content-space-around", s.nav) } />
-        <hr className={s.hr}/>
+        <hr className={s.hr} />
+        <Nav className={cx('flexbox row wrap justify-content-space-around', s.nav)} />
+        <hr className={s.hr} />
       </div>
     );
   }

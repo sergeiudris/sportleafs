@@ -17,7 +17,7 @@ class InfoPage extends React.Component {
   render() {
     return (
       <Layout>
-        <section className={cx('flexbox column nowrap', s.root) }>
+        <section className={cx('flexbox column nowrap', s.root)}>
           <div >
             powered by: &nbsp;
             <span className={s.name}>
@@ -28,7 +28,7 @@ class InfoPage extends React.Component {
           </div>
           <div >
             contact: &nbsp;
-            <span className={s.name}>serge.joggen@gmail.com  </span>
+            <span className={s.name}>serge.joggen@gmail.com            </span>
           </div>
         </section>
       </Layout>

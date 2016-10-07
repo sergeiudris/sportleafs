@@ -7,10 +7,10 @@ import Nav from '../navigation';
 
 function Footer() {
   return (
-    <footer className={cx("flexbox column nowrap align-items-center", s.footer) }>
-      <hr className={s.hr}/>
+    <footer className={cx('flexbox column nowrap align-items-center', s.footer)}>
+      <hr className={s.hr} />
       <Nav className="flexbox row wrap justify-content-center" />
-      <span className={cx('',s.copyright)}>
+      <span className={cx('', s.copyright)}>
       <i className="fa fa-copyright"></i>
       &nbsp;
       2016&nbsp;-

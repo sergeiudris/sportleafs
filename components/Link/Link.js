@@ -8,9 +8,9 @@ class Link extends React.Component {
   static propTypes = {
     to: PropTypes.oneOfType([PropTypes.string, PropTypes.object]).isRequired,
     onClick: PropTypes.func,
-  };
+  }
 
-  handleClick = (event) => {
+  handleClick(event) {
     if (this.props.onClick) {
       this.props.onClick(event);
     }
@@ -38,11 +38,11 @@ class Link extends React.Component {
         search: event.currentTarget.search,
       });
     }
-  };
+  }
 
   render() {
     const { to, ...props } = this.props; // eslint-disable-line no-use-before-define
-    return <a {...props} className={cx(s.root,this.props.className)} href={history.createHref(to)}  onClick={this.handleClick} />;
+    return <a {...props} className={cx(s.root, this.props.className)} href={history.createHref(to)} onClick={this.handleClick} />;
   }
 
 }

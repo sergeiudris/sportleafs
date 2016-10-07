@@ -73,16 +73,16 @@ function resolve(routes, context) {
         }),
       ]).then(([Page, ...data]) => {
         const props = keys.reduce((result, key, i) => ({ ...result, [key]: data[i] }), {});
-      return <Page params={Object.assign({}, location.params) } route={route} error={context.error} {...props} />;
-    });
+        return <Page params={Object.assign({}, location.params)} route={route} error={context.error} {...props} />;
+      });
+    }
+
+    return route.load().then(Page => <Page params={Object.assign({}, location.params)} route={route} error={context.error} />);
   }
 
-  return route.load().then(Page => <Page params={Object.assign({}, location.params) } route={route} error={context.error} />);
-}
-
-const error = new Error('Page not found');
-error.status = 500;
-return Promise.reject(error);
+  const error = new Error('Page not found');
+  error.status = 500;
+  return Promise.reject(error);
 }
 
 export default { resolve };

@@ -8,15 +8,15 @@ require('adven-ui/css/flexbox.css');
 
 class Nav extends React.Component {
 
-    componentDidMount() {
-        //window.componentHandler.upgradeElement(this.root);
-    }
+  componentDidMount() {
+        // window.componentHandler.upgradeElement(this.root);
+  }
 
-    componentWillUnmount() {
-        //window.componentHandler.downgradeElements(this.root);
-    }
+  componentWillUnmount() {
+        // window.componentHandler.downgradeElements(this.root);
+  }
 
-    render() {
+  render() {
         // return (
         //   <header className="mdl-layout__header" ref={node => (this.root = node) }>
         //     <div className="mdl-layout__header-row" {...this.props} />
@@ -24,23 +24,23 @@ class Nav extends React.Component {
         //   </header>
         // );
 
-        //<Link to="/sport/nba">NBA</Link>
+        // <Link to="/sport/nba">NBA</Link>
         // <Link to="/sport/football">Football</Link>
         // <Link to="/sport/nhl">NHL</Link>
         // <Link to="/sport/nfl">NFL</Link>
         // <Link to="/sport/tennis">Tennis</Link>
         // <Link to="/sport/olympics">Olympics</Link>
 
-        return (
-            <nav className={cx('', this.props.className) }>
-                <Link to="/" className={cx('', s.link) }><i className="fa fa-home"></i></Link>
-                <Link to="/tweets" className={cx('', s.link) }><i className="fa fa-twitter"></i></Link>
-                <Link to="/sports" className={cx('', s.link) }><i className="fa fa-soccer-ball-o"></i></Link>
-                <Link to="/" className={cx('', s.link) }><i className="fa fa-search"></i></Link>
-                <Link to="/info" className={cx('', s.link) }><i className="fa fa-info-circle"></i></Link>
+    return (
+            <nav className={cx('', this.props.className)}>
+                <Link to="/" className={cx('', s.link)}><i className="fa fa-home"></i></Link>
+                <Link to="/tweets" className={cx('', s.link)}><i className="fa fa-twitter"></i></Link>
+                <Link to="/sports" className={cx('', s.link)}><i className="fa fa-soccer-ball-o"></i></Link>
+                <Link to="/search" className={cx('', s.link)}><i className="fa fa-search"></i></Link>
+                <Link to="/info" className={cx('', s.link)}><i className="fa fa-info-circle"></i></Link>
             </nav>
         );
-    }
+  }
 
 }
 

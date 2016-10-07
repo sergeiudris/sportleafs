@@ -1,0 +1,301 @@
+
+C:\Users\serge\Desktop\knockknock\_portals\sportleafs\components\Footer\Footer.js
+
+║ [1m[1m[1m[1mLine[22m     │ [1m[1m[1m[1mColumn[22m   │ [1m[1m[1m[1mType[22m     │ [1mMessage[22m                                                │ [1mRule ID[22m              ║
+╟──────────┼──────────┼──────────┼────────────────────────────────────────────────────────┼──────────────────────╢
+║ 1        │ 1        │ [31m[31m[31m[31m[31merror[39m    │ 'react' should be listed in the project's              │ import/no-           ║
+║          │          │          │ dependencies. Run 'npm i -S react' to add it           │ extraneous-          ║
+║          │          │          │                                                        │ dependencies         ║
+║ 2        │ 8        │ [31m[31m[31m[31m[31merror[39m    │ 'Link' is defined but never used.                      │ no-unused-vars       ║
+║ 3        │ 1        │ [31m[31m[31m[31m[31merror[39m    │ 'adven-ui' should be listed in the project's           │ import/no-           ║
+║          │          │          │ dependencies. Run 'npm i -S adven-ui' to add it        │ extraneous-          ║
+║          │          │          │                                                        │ dependencies         ║
+║ 3        │ 9        │ [31m[31m[31m[31m[31merror[39m    │ Unable to resolve path to module                       │ import/no-unresolved ║
+║          │          │          │ 'adven-ui/css/flexbox.css'.                            │                      ║
+║ 5        │ 1        │ [31m[31m[31m[31m[31merror[39m    │ 'classnames' should be listed in the project's         │ import/no-           ║
+║          │          │          │ dependencies. Run 'npm i -S classnames' to add it      │ extraneous-          ║
+║          │          │          │                                                        │ dependencies         ║
+
+C:\Users\serge\Desktop\knockknock\_portals\sportleafs\components\Layout\Header.js
+
+║ [1m[1m[1m[1mLine[22m     │ [1m[1m[1m[1mColumn[22m   │ [1m[1m[1m[1mType[22m     │ [1mMessage[22m                                                │ [1mRule ID[22m              ║
+╟──────────┼──────────┼──────────┼────────────────────────────────────────────────────────┼──────────────────────╢
+║ 1        │ 1        │ [31m[31m[31m[31m[31merror[39m    │ 'react' should be listed in the project's              │ import/no-           ║
+║          │          │          │ dependencies. Run 'npm i -S react' to add it           │ extraneous-          ║
+║          │          │          │                                                        │ dependencies         ║
+║ 3        │ 1        │ [31m[31m[31m[31m[31merror[39m    │ 'firebase-logins' should be listed in the              │ import/no-           ║
+║          │          │          │ project's dependencies. Run 'npm i -S                  │ extraneous-          ║
+║          │          │          │ firebase-logins' to add it                             │ dependencies         ║
+║ 3        │ 28       │ [31m[31m[31m[31m[31merror[39m    │ Unable to resolve path to module                       │ import/no-unresolved ║
+║          │          │          │ 'firebase-logins'.                                     │                      ║
+║ 7        │ 1        │ [31m[31m[31m[31m[31merror[39m    │ 'classnames' should be listed in the project's         │ import/no-           ║
+║          │          │          │ dependencies. Run 'npm i -S classnames' to add it      │ extraneous-          ║
+║          │          │          │                                                        │ dependencies         ║
+║ 11       │ 1        │ [31m[31m[31m[31m[31merror[39m    │ 'adven-ui' should be listed in the project's           │ import/no-           ║
+║          │          │          │ dependencies. Run 'npm i -S adven-ui' to add it        │ extraneous-          ║
+║          │          │          │                                                        │ dependencies         ║
+║ 11       │ 9        │ [31m[31m[31m[31m[31merror[39m    │ Unable to resolve path to module                       │ import/no-unresolved ║
+║          │          │          │ 'adven-ui/css/flexbox.css'.                            │                      ║
+║ 12       │ 1        │ [31m[31m[31m[31m[31merror[39m    │ 'adven-ui' should be listed in the project's           │ import/no-           ║
+║          │          │          │ dependencies. Run 'npm i -S adven-ui' to add it        │ extraneous-          ║
+║          │          │          │                                                        │ dependencies         ║
+║ 12       │ 9        │ [31m[31m[31m[31m[31merror[39m    │ Unable to resolve path to module                       │ import/no-unresolved ║
+║          │          │          │ 'adven-ui/css/sizes.css'.                              │                      ║
+║ 39       │ 43       │ [31m[31m[31m[31m[31merror[39m    │ img elements must have an alt prop or use              │ jsx-a11y/img-has-alt ║
+║          │          │          │ role="presentation".                                   │                      ║
+
+C:\Users\serge\Desktop\knockknock\_portals\sportleafs\components\Layout\Layout.js
+
+║ [1m[1m[1m[1mLine[22m     │ [1m[1m[1m[1mColumn[22m   │ [1m[1m[1m[1mType[22m     │ [1mMessage[22m                                                │ [1mRule ID[22m              ║
+╟──────────┼──────────┼──────────┼────────────────────────────────────────────────────────┼──────────────────────╢
+║ 2        │ 1        │ [31m[31m[31m[31m[31merror[39m    │ 'react' should be listed in the project's              │ import/no-           ║
+║          │          │          │ dependencies. Run 'npm i -S react' to add it           │ extraneous-          ║
+║          │          │          │                                                        │ dependencies         ║
+║ 6        │ 1        │ [31m[31m[31m[31m[31merror[39m    │ 'adven-ui' should be listed in the project's           │ import/no-           ║
+║          │          │          │ dependencies. Run 'npm i -S adven-ui' to add it        │ extraneous-          ║
+║          │          │          │                                                        │ dependencies         ║
+║ 6        │ 8        │ [31m[31m[31m[31m[31merror[39m    │ 'UnderContruction' is defined but never used.          │ no-unused-vars       ║
+║ 6        │ 30       │ [31m[31m[31m[31m[31merror[39m    │ Unable to resolve path to module                       │ import/no-unresolved ║
+║          │          │          │ 'adven-ui/under-construction'.                         │                      ║
+║ 8        │ 8        │ [31m[31m[31m[31m[31merror[39m    │ 'Link' is defined but never used.                      │ no-unused-vars       ║
+║ 10       │ 1        │ [31m[31m[31m[31m[31merror[39m    │ 'adven-ui' should be listed in the project's           │ import/no-           ║
+║          │          │          │ dependencies. Run 'npm i -S adven-ui' to add it        │ extraneous-          ║
+║          │          │          │                                                        │ dependencies         ║
+║ 10       │ 9        │ [31m[31m[31m[31m[31merror[39m    │ Unable to resolve path to module                       │ import/no-unresolved ║
+║          │          │          │ 'adven-ui/css/flexbox.css'.                            │                      ║
+║ 11       │ 1        │ [31m[31m[31m[31m[31merror[39m    │ 'adven-ui' should be listed in the project's           │ import/no-           ║
+║          │          │          │ dependencies. Run 'npm i -S adven-ui' to add it        │ extraneous-          ║
+║          │          │          │                                                        │ dependencies         ║
+║ 11       │ 9        │ [31m[31m[31m[31m[31merror[39m    │ Unable to resolve path to module                       │ import/no-unresolved ║
+║          │          │          │ 'adven-ui/css/normalize.scss'.                         │                      ║
+║ 12       │ 1        │ [31m[31m[31m[31m[31merror[39m    │ 'adven-ui' should be listed in the project's           │ import/no-           ║
+║          │          │          │ dependencies. Run 'npm i -S adven-ui' to add it        │ extraneous-          ║
+║          │          │          │                                                        │ dependencies         ║
+║ 12       │ 9        │ [31m[31m[31m[31m[31merror[39m    │ Unable to resolve path to module                       │ import/no-unresolved ║
+║          │          │          │ 'adven-ui/css/global.scss'.                            │                      ║
+║ 13       │ 1        │ [31m[31m[31m[31m[31merror[39m    │ 'font-awesome' should be listed in the project's       │ import/no-           ║
+║          │          │          │ dependencies. Run 'npm i -S font-awesome' to add       │ extraneous-          ║
+║          │          │          │ it                                                     │ dependencies         ║
+║ 14       │ 1        │ [31m[31m[31m[31m[31merror[39m    │ 'classnames' should be listed in the project's         │ import/no-           ║
+║          │          │          │ dependencies. Run 'npm i -S classnames' to add it      │ extraneous-          ║
+║          │          │          │                                                        │ dependencies         ║
+║ 31       │ 52       │ [31m[31m[31m[31m[31merror[39m    │ 'children' is missing in props validation              │ react/prop-types     ║
+
+C:\Users\serge\Desktop\knockknock\_portals\sportleafs\components\Link\Link.js
+
+║ [1m[1m[1m[1mLine[22m     │ [1m[1m[1m[1mColumn[22m   │ [1m[1m[1m[1mType[22m     │ [1mMessage[22m                                                │ [1mRule ID[22m              ║
+╟──────────┼──────────┼──────────┼────────────────────────────────────────────────────────┼──────────────────────╢
+║ 1        │ 1        │ [31m[31m[31m[31m[31merror[39m    │ 'react' should be listed in the project's              │ import/no-           ║
+║          │          │          │ dependencies. Run 'npm i -S react' to add it           │ extraneous-          ║
+║          │          │          │                                                        │ dependencies         ║
+║ 4        │ 1        │ [31m[31m[31m[31m[31merror[39m    │ 'classnames' should be listed in the project's         │ import/no-           ║
+║          │          │          │ dependencies. Run 'npm i -S classnames' to add it      │ extraneous-          ║
+║          │          │          │                                                        │ dependencies         ║
+║ 45       │ 59       │ [31m[31m[31m[31m[31merror[39m    │ 'className' is missing in props validation             │ react/prop-types     ║
+
+C:\Users\serge\Desktop\knockknock\_portals\sportleafs\components\message\index.js
+
+║ [1m[1m[1m[1mLine[22m     │ [1m[1m[1m[1mColumn[22m   │ [1m[1m[1m[1mType[22m     │ [1mMessage[22m                                                │ [1mRule ID[22m              ║
+╟──────────┼──────────┼──────────┼────────────────────────────────────────────────────────┼──────────────────────╢
+║ 4        │ 1        │ [31m[31m[31m[31m[31merror[39m    │ 'adven-ui' should be listed in the project's           │ import/no-           ║
+║          │          │          │ dependencies. Run 'npm i -S adven-ui' to add it        │ extraneous-          ║
+║          │          │          │                                                        │ dependencies         ║
+║ 4        │ 8        │ [31m[31m[31m[31m[31merror[39m    │ 'flexbox' is defined but never used.                   │ no-unused-vars       ║
+║ 4        │ 21       │ [31m[31m[31m[31m[31merror[39m    │ Unable to resolve path to module                       │ import/no-unresolved ║
+║          │          │          │ 'adven-ui/css/flexbox.css'.                            │                      ║
+║ 6        │ 1        │ [31m[31m[31m[31m[31merror[39m    │ 'classnames' should be listed in the project's         │ import/no-           ║
+║          │          │          │ dependencies. Run 'npm i -S classnames' to add it      │ extraneous-          ║
+║          │          │          │                                                        │ dependencies         ║
+║ 7        │ 1        │ [31m[31m[31m[31m[31merror[39m    │ 'react-flip-move' should be listed in the              │ import/no-           ║
+║          │          │          │ project's dependencies. Run 'npm i -S                  │ extraneous-          ║
+║          │          │          │ react-flip-move' to add it                             │ dependencies         ║
+║ 7        │ 8        │ [31m[31m[31m[31m[31merror[39m    │ 'FlipMove' is defined but never used.                  │ no-unused-vars       ║
+║ 27       │ 7        │ [31m[31m[31m[31m[31merror[39m    │ Do not use setState in componentDidMount               │ react/no-did-mount-  ║
+║          │          │          │                                                        │ set-state            ║
+║ 61       │ 1        │ [31m[31m[31m[31m[31merror[39m    │ Line 61 exceeds the maximum line length of 150.        │ max-len              ║
+║ 80       │ 1        │ [31m[31m[31m[31m[31merror[39m    │ Line 80 exceeds the maximum line length of 150.        │ max-len              ║
+
+C:\Users\serge\Desktop\knockknock\_portals\sportleafs\components\navigation\index.js
+
+║ [1m[1m[1m[1mLine[22m     │ [1m[1m[1m[1mColumn[22m   │ [1m[1m[1m[1mType[22m     │ [1mMessage[22m                                                │ [1mRule ID[22m              ║
+╟──────────┼──────────┼──────────┼────────────────────────────────────────────────────────┼──────────────────────╢
+║ 4        │ 1        │ [31m[31m[31m[31m[31merror[39m    │ 'classnames' should be listed in the project's         │ import/no-           ║
+║          │          │          │ dependencies. Run 'npm i -S classnames' to add it      │ extraneous-          ║
+║          │          │          │                                                        │ dependencies         ║
+║ 7        │ 1        │ [31m[31m[31m[31m[31merror[39m    │ 'adven-ui' should be listed in the project's           │ import/no-           ║
+║          │          │          │ dependencies. Run 'npm i -S adven-ui' to add it        │ extraneous-          ║
+║          │          │          │                                                        │ dependencies         ║
+║ 7        │ 9        │ [31m[31m[31m[31m[31merror[39m    │ Unable to resolve path to module                       │ import/no-unresolved ║
+║          │          │          │ 'adven-ui/css/flexbox.css'.                            │                      ║
+║ 35       │ 47       │ [31m[31m[31m[31m[31merror[39m    │ 'className' is missing in props validation             │ react/prop-types     ║
+
+C:\Users\serge\Desktop\knockknock\_portals\sportleafs\components\switches\index.js
+
+║ [1m[1m[1m[1mLine[22m     │ [1m[1m[1m[1mColumn[22m   │ [1m[1m[1m[1mType[22m     │ [1mMessage[22m                                                │ [1mRule ID[22m              ║
+╟──────────┼──────────┼──────────┼────────────────────────────────────────────────────────┼──────────────────────╢
+║ 4        │ 1        │ [31m[31m[31m[31m[31merror[39m    │ 'adven-ui' should be listed in the project's           │ import/no-           ║
+║          │          │          │ dependencies. Run 'npm i -S adven-ui' to add it        │ extraneous-          ║
+║          │          │          │                                                        │ dependencies         ║
+║ 4        │ 8        │ [31m[31m[31m[31m[31merror[39m    │ 'flexbox' is defined but never used.                   │ no-unused-vars       ║
+║ 4        │ 21       │ [31m[31m[31m[31m[31merror[39m    │ Unable to resolve path to module                       │ import/no-unresolved ║
+║          │          │          │ 'adven-ui/css/flexbox.css'.                            │                      ║
+║ 6        │ 1        │ [31m[31m[31m[31m[31merror[39m    │ 'classnames' should be listed in the project's         │ import/no-           ║
+║          │          │          │ dependencies. Run 'npm i -S classnames' to add it      │ extraneous-          ║
+║          │          │          │                                                        │ dependencies         ║
+║ 7        │ 1        │ [31m[31m[31m[31m[31merror[39m    │ 'adven-ui' should be listed in the project's           │ import/no-           ║
+║          │          │          │ dependencies. Run 'npm i -S adven-ui' to add it        │ extraneous-          ║
+║          │          │          │                                                        │ dependencies         ║
+║ 7        │ 20       │ [31m[31m[31m[31m[31merror[39m    │ Unable to resolve path to module                       │ import/no-unresolved ║
+║          │          │          │ 'adven-ui/button'.                                     │                      ║
+║ 38       │ 19       │ [31m[31m[31m[31m[31merror[39m    │ 'evt' is defined but never used.                       │ no-unused-vars       ║
+║ 42       │ 22       │ [31m[31m[31m[31m[31merror[39m    │ 'onChange' is missing in props validation              │ react/prop-types     ║
+║ 43       │ 20       │ [31m[31m[31m[31m[31merror[39m    │ 'onChange' is missing in props validation              │ react/prop-types     ║
+║ 52       │ 1        │ [31m[31m[31m[31m[31merror[39m    │ Line 52 exceeds the maximum line length of 150.        │ max-len              ║
+
+C:\Users\serge\Desktop\knockknock\_portals\sportleafs\components\Tweet\index.js
+
+║ [1m[1m[1m[1mLine[22m     │ [1m[1m[1m[1mColumn[22m   │ [1m[1m[1m[1mType[22m     │ [1mMessage[22m                                                │ [1mRule ID[22m              ║
+╟──────────┼──────────┼──────────┼────────────────────────────────────────────────────────┼──────────────────────╢
+║ 3        │ 1        │ [31m[31m[31m[31m[31merror[39m    │ 'adven-ui' should be listed in the project's           │ import/no-           ║
+║          │          │          │ dependencies. Run 'npm i -S adven-ui' to add it        │ extraneous-          ║
+║          │          │          │                                                        │ dependencies         ║
+║ 3        │ 9        │ [31m[31m[31m[31m[31merror[39m    │ Unable to resolve path to module                       │ import/no-unresolved ║
+║          │          │          │ 'adven-ui/css/flexbox.css'.                            │                      ║
+║ 4        │ 1        │ [31m[31m[31m[31m[31merror[39m    │ 'velocity-react' should be listed in the project's     │ import/no-           ║
+║          │          │          │ dependencies. Run 'npm i -S velocity-react' to add     │ extraneous-          ║
+║          │          │          │ it                                                     │ dependencies         ║
+║ 4        │ 10       │ [31m[31m[31m[31m[31merror[39m    │ 'VelocityComponent' is defined but never used.         │ no-unused-vars       ║
+║ 4        │ 29       │ [31m[31m[31m[31m[31merror[39m    │ 'VelocityTransitionGroup' is defined but never         │ no-unused-vars       ║
+║          │          │          │ used.                                                  │                      ║
+║ 6        │ 1        │ [31m[31m[31m[31m[31merror[39m    │ 'classnames' should be listed in the project's         │ import/no-           ║
+║          │          │          │ dependencies. Run 'npm i -S classnames' to add it      │ extraneous-          ║
+║          │          │          │                                                        │ dependencies         ║
+║ 22       │ 30       │ [31m[31m[31m[31m[31merror[39m    │ 'tweet' is missing in props validation                 │ react/prop-types     ║
+║ 25       │ 17       │ [31m[31m[31m[31m[31merror[39m    │ img elements must have an alt prop or use              │ jsx-a11y/img-has-alt ║
+║          │          │          │ role="presentation".                                   │                      ║
+
+C:\Users\serge\Desktop\knockknock\_portals\sportleafs\data\twitter-openshift.js
+
+║ [1m[1m[1m[1mLine[22m     │ [1m[1m[1m[1mColumn[22m   │ [1m[1m[1m[1mType[22m     │ [1mMessage[22m                                                │ [1mRule ID[22m              ║
+╟──────────┼──────────┼──────────┼────────────────────────────────────────────────────────┼──────────────────────╢
+║ 3        │ 12       │ [31m[31m[31m[31m[31merror[39m    │ 'socket.io-client' should be listed in the             │ import/no-           ║
+║          │          │          │ project's dependencies. Run 'npm i -S                  │ extraneous-          ║
+║          │          │          │ socket.io-client' to add it                            │ dependencies         ║
+
+C:\Users\serge\Desktop\knockknock\_portals\sportleafs\pages\home\index.js
+
+║ [1m[1m[1m[1mLine[22m     │ [1m[1m[1m[1mColumn[22m   │ [1m[1m[1m[1mType[22m     │ [1mMessage[22m                                                │ [1mRule ID[22m              ║
+╟──────────┼──────────┼──────────┼────────────────────────────────────────────────────────┼──────────────────────╢
+║ 2        │ 17       │ [31m[31m[31m[31m[31merror[39m    │ 'PropTypes' is defined but never used.                 │ no-unused-vars       ║
+║ 4        │ 8        │ [31m[31m[31m[31m[31merror[39m    │ 'Link' is defined but never used.                      │ no-unused-vars       ║
+║ 6        │ 1        │ [31m[31m[31m[31m[31merror[39m    │ 'adven-ui' should be listed in the project's           │ import/no-           ║
+║          │          │          │ dependencies. Run 'npm i -S adven-ui' to add it        │ extraneous-          ║
+║          │          │          │                                                        │ dependencies         ║
+║ 6        │ 9        │ [31m[31m[31m[31m[31merror[39m    │ Unable to resolve path to module                       │ import/no-unresolved ║
+║          │          │          │ 'adven-ui/css/flexbox.css'.                            │                      ║
+║ 32       │ 1        │ [31m[31m[31m[31m[31merror[39m    │ Line 32 exceeds the maximum line length of 150.        │ max-len              ║
+║ 34       │ 1        │ [31m[31m[31m[31m[31merror[39m    │ Line 34 exceeds the maximum line length of 150.        │ max-len              ║
+
+C:\Users\serge\Desktop\knockknock\_portals\sportleafs\pages\info\index.js
+
+║ [1m[1m[1m[1mLine[22m     │ [1m[1m[1m[1mColumn[22m   │ [1m[1m[1m[1mType[22m     │ [1mMessage[22m                                                │ [1mRule ID[22m              ║
+╟──────────┼──────────┼──────────┼────────────────────────────────────────────────────────┼──────────────────────╢
+║ 2        │ 20       │ [31m[31m[31m[31m[31merror[39m    │ 'C:\Users\serge\Desktop\knockknock\_portals\           │ import/no-duplicates ║
+║          │          │          │ sportleafs\components\Layout\Layout.js' imported       │                      ║
+║          │          │          │ multiple times.                                        │                      ║
+║ 3        │ 1        │ [31m[31m[31m[31m[31merror[39m    │ '../../components/Layout' import is duplicated.        │ no-duplicate-imports ║
+║ 3        │ 8        │ [31m[31m[31m[31m[31merror[39m    │ 'Link' is defined but never used.                      │ no-unused-vars       ║
+║ 3        │ 18       │ [31m[31m[31m[31m[31merror[39m    │ 'C:\Users\serge\Desktop\knockknock\_portals\           │ import/no-duplicates ║
+║          │          │          │ sportleafs\components\Layout\Layout.js' imported       │                      ║
+║          │          │          │ multiple times.                                        │                      ║
+║ 5        │ 10       │ [31m[31m[31m[31m[31merror[39m    │ 'title' is defined but never used.                     │ no-unused-vars       ║
+║ 5        │ 17       │ [31m[31m[31m[31m[31merror[39m    │ 'html' is defined but never used.                      │ no-unused-vars       ║
+║ 8        │ 1        │ [31m[31m[31m[31m[31merror[39m    │ 'classnames' should be listed in the project's         │ import/no-           ║
+║          │          │          │ dependencies. Run 'npm i -S classnames' to add it      │ extraneous-          ║
+║          │          │          │                                                        │ dependencies         ║
+║ 9        │ 1        │ [31m[31m[31m[31m[31merror[39m    │ 'adven-ui' should be listed in the project's           │ import/no-           ║
+║          │          │          │ dependencies. Run 'npm i -S adven-ui' to add it        │ extraneous-          ║
+║          │          │          │                                                        │ dependencies         ║
+║ 9        │ 9        │ [31m[31m[31m[31m[31merror[39m    │ Unable to resolve path to module                       │ import/no-unresolved ║
+║          │          │          │ 'adven-ui/css/flexbox.css'.                            │                      ║
+║ 31       │ 72       │ [31m[31m[31m[31m[31merror[39m    │ Multiple spaces found before '<'.                      │ no-multi-spaces      ║
+
+C:\Users\serge\Desktop\knockknock\_portals\sportleafs\pages\tweets\index.js
+
+║ [1m[1m[1m[1mLine[22m     │ [1m[1m[1m[1mColumn[22m   │ [1m[1m[1m[1mType[22m     │ [1mMessage[22m                                                │ [1mRule ID[22m              ║
+╟──────────┼──────────┼──────────┼────────────────────────────────────────────────────────┼──────────────────────╢
+║ 7        │ 1        │ [31m[31m[31m[31m[31merror[39m    │ 'adven-ui' should be listed in the project's           │ import/no-           ║
+║          │          │          │ dependencies. Run 'npm i -S adven-ui' to add it        │ extraneous-          ║
+║          │          │          │                                                        │ dependencies         ║
+║ 7        │ 9        │ [31m[31m[31m[31m[31merror[39m    │ Unable to resolve path to module                       │ import/no-unresolved ║
+║          │          │          │ 'adven-ui/css/flexbox.css'.                            │                      ║
+║ 13       │ 1        │ [31m[31m[31m[31m[31merror[39m    │ 'adven-ui' should be listed in the project's           │ import/no-           ║
+║          │          │          │ dependencies. Run 'npm i -S adven-ui' to add it        │ extraneous-          ║
+║          │          │          │                                                        │ dependencies         ║
+║ 13       │ 25       │ [31m[31m[31m[31m[31merror[39m    │ Unable to resolve path to module                       │ import/no-unresolved ║
+║          │          │          │ 'adven-ui/twitter-flow'.                               │                      ║
+║ 14       │ 8        │ [31m[31m[31m[31m[31merror[39m    │ 'Switches' is defined but never used.                  │ no-unused-vars       ║
+║ 15       │ 8        │ [31m[31m[31m[31m[31merror[39m    │ 'Message' is defined but never used.                   │ no-unused-vars       ║
+║ 18       │ 1        │ [31m[31m[31m[31m[31merror[39m    │ 'classnames' should be listed in the project's         │ import/no-           ║
+║          │          │          │ dependencies. Run 'npm i -S classnames' to add it      │ extraneous-          ║
+║          │          │          │                                                        │ dependencies         ║
+║ 19       │ 1        │ [31m[31m[31m[31m[31merror[39m    │ 'adven-ui' should be listed in the project's           │ import/no-           ║
+║          │          │          │ dependencies. Run 'npm i -S adven-ui' to add it        │ extraneous-          ║
+║          │          │          │                                                        │ dependencies         ║
+║ 19       │ 20       │ [31m[31m[31m[31m[31merror[39m    │ Unable to resolve path to module                       │ import/no-unresolved ║
+║          │          │          │ 'adven-ui/button'.                                     │                      ║
+║ 25       │ 3        │ [31m[31m[31m[31m[31merror[39m    │ constructor should be placed after contextTypes        │ react/sort-comp      ║
+║ 46       │ 5        │ [31m[31m[31m[31m[31merror[39m    │ Do not use setState in componentDidMount               │ react/no-did-mount-  ║
+║          │          │          │                                                        │ set-state            ║
+║ 58       │ 29       │ [31m[31m[31m[31m[31merror[39m    │ 'nextProps' is defined but never used.                 │ no-unused-vars       ║
+║ 66       │ 34       │ [31m[31m[31m[31m[31merror[39m    │ 'nextState' is defined but never used.                 │ no-unused-vars       ║
+║ 70       │ 35       │ [31m[31m[31m[31m[31merror[39m    │ 'nextState' is defined but never used.                 │ no-unused-vars       ║
+║ 75       │ 19       │ [31m[31m[31m[31m[31merror[39m    │ 'evt' is defined but never used.                       │ no-unused-vars       ║
+║ 84       │ 11       │ [31m[31m[31m[31m[31merror[39m    │ 'e' is defined but never used.                         │ no-unused-vars       ║
+║ 98       │ 31       │ [31m[31m[31m[31m[31merror[39m    │ 'tweets' is missing in props validation                │ react/prop-types     ║
+║ 102      │ 14       │ [31m[31m[31m[31m[31merror[39m    │ 'runAnimation' is defined but never used.              │ no-unused-vars       ║
+║ 102      │ 30       │ [31m[31m[31m[31m[31merror[39m    │ 'evt' is defined but never used.                       │ no-unused-vars       ║
+║ 105      │ 11       │ [31m[31m[31m[31m[31merror[39m    │ 'anim' is defined but never used.                      │ no-unused-vars       ║
+║ 111      │ 93       │ [31m[31m[31m[31m[31merror[39m    │ 'className' is missing in props validation             │ react/prop-types     ║
+║ 112      │ 1        │ [31m[31m[31m[31m[31merror[39m    │ Line 112 exceeds the maximum line length of 150.       │ max-len              ║
+║ 113      │ 1        │ [31m[31m[31m[31m[31merror[39m    │ Line 113 exceeds the maximum line length of 150.       │ max-len              ║
+║ 114      │ 1        │ [31m[31m[31m[31m[31merror[39m    │ Line 114 exceeds the maximum line length of 150.       │ max-len              ║
+║ 115      │ 1        │ [31m[31m[31m[31m[31merror[39m    │ Line 115 exceeds the maximum line length of 150.       │ max-len              ║
+║ 116      │ 1        │ [31m[31m[31m[31m[31merror[39m    │ Line 116 exceeds the maximum line length of 150.       │ max-len              ║
+║ 159      │ 35       │ [31m[31m[31m[31m[31merror[39m    │ Unexpected block statement surrounding arrow body.     │ arrow-body-style     ║
+
+C:\Users\serge\Desktop\knockknock\_portals\sportleafs\tasks\_run.js
+
+║ [1m[1m[1m[1mLine[22m     │ [1m[1m[1m[1mColumn[22m   │ [1m[1m[1m[1mType[22m     │ [1mMessage[22m                                                │ [1mRule ID[22m              ║
+╟──────────┼──────────┼──────────┼────────────────────────────────────────────────────────┼──────────────────────╢
+║ 7        │ 17       │ [31m[31m[31m[31m[31merror[39m    │ Unexpected block statement surrounding arrow body.     │ arrow-body-style     ║
+
+C:\Users\serge\Desktop\knockknock\_portals\sportleafs\tasks\build.js
+
+║ [1m[1m[1m[1mLine[22m     │ [1m[1m[1m[1mColumn[22m   │ [1m[1m[1m[1mType[22m     │ [1mMessage[22m                                                │ [1mRule ID[22m              ║
+╟──────────┼──────────┼──────────┼────────────────────────────────────────────────────────┼──────────────────────╢
+║ 4        │ 7        │ [31m[31m[31m[31m[31merror[39m    │ 'webpack' is defined but never used.                   │ no-unused-vars       ║
+
+C:\Users\serge\Desktop\knockknock\_portals\sportleafs\tasks\publish.js
+
+║ [1m[1m[1m[1mLine[22m     │ [1m[1m[1m[1mColumn[22m   │ [1m[1m[1m[1mType[22m     │ [1mMessage[22m                                                │ [1mRule ID[22m              ║
+╟──────────┼──────────┼──────────┼────────────────────────────────────────────────────────┼──────────────────────╢
+║ 1        │ 7        │ [31m[31m[31m[31m[31merror[39m    │ 'fs' is defined but never used.                        │ no-unused-vars       ║
+
+C:\Users\serge\Desktop\knockknock\_portals\sportleafs\tasks\start-bs.js
+
+║ [1m[1m[1m[1mLine[22m     │ [1m[1m[1m[1mColumn[22m   │ [1m[1m[1m[1mType[22m     │ [1mMessage[22m                                                │ [1mRule ID[22m              ║
+╟──────────┼──────────┼──────────┼────────────────────────────────────────────────────────┼──────────────────────╢
+║ 2        │ 7        │ [31m[31m[31m[31m[31merror[39m    │ 'path' is defined but never used.                      │ no-unused-vars       ║
+
+C:\Users\serge\Desktop\knockknock\_portals\sportleafs\tasks\start.js
+
+║ [1m[1m[1m[1mLine[22m     │ [1m[1m[1m[1mColumn[22m   │ [1m[1m[1m[1mType[22m     │ [1mMessage[22m                                                │ [1mRule ID[22m              ║
+╟──────────┼──────────┼──────────┼────────────────────────────────────────────────────────┼──────────────────────╢
+║ 17       │ 34       │ [31m[31m[31m[31m[31merror[39m    │ 'reject' is defined but never used.                    │ no-unused-vars       ║
+
+╔════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
+║ [31m111 Errors[39m                                                                                                     ║
+╟────────────────────────────────────────────────────────────────────────────────────────────────────────────────╢
+║ [33m0 Warnings[39m                                                                                                     ║
+╚════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝

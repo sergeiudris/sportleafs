@@ -1,12 +1,30 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://sportleafs.firebaseapp.com/</loc>
-  </url>
-  <url>
-    <loc>https://sportleafs.firebaseapp.com/error</loc>
-  </url>
-  <url>
-    <loc>https://sportleafs.firebaseapp.com/about</loc>
-  </url>
-</urlset>
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+        
+            <url>
+            <loc>https://sportleafs.firebaseapp.com/</loc>
+            </url>
+            
+            <url>
+            <loc>https://sportleafs.firebaseapp.com/error</loc>
+            </url>
+            
+            <url>
+            <loc>https://sportleafs.firebaseapp.com/info</loc>
+            </url>
+            
+            <url>
+            <loc>https://sportleafs.firebaseapp.com/sports</loc>
+            </url>
+            
+            <url>
+            <loc>https://sportleafs.firebaseapp.com/tweets</loc>
+            </url>
+            
+            <url>
+            <loc>https://sportleafs.firebaseapp.com/search</loc>
+            </url>
+            
+    </urlset>
+    

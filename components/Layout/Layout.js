@@ -25,8 +25,8 @@ class Layout extends React.Component {
 
   render() {
     return (
-      <div className={cx("flexbox column nowrap", s.root) }>
-        <Header/>
+      <div className={cx('flexbox column nowrap', s.root)}>
+        <Header />
         <Message />
         <section className={s.content}>{this.props.children}</section>
         <Footer />

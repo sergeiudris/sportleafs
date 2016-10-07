@@ -27,6 +27,10 @@
     "page": "./pages/tweets"
   },
   {
+    "path": "/search",
+    "page": "./pages/tweets"
+  },
+  {
     "path": "/tasks/:status(pending|completed)?",
     "page": "./pages/home"
   }
