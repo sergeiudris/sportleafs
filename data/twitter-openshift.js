@@ -12,7 +12,7 @@ function connectToTwitterStream() {
     // socket = io('https://46.188.58.225:2000',{secure:true});
     // socket = io.connect('https://localhost:2443/',{reconnection: true});
 
-  socket = io.connect('https://twitterstream-sergejoggen.rhcloud.com:8443/', { transports: ['websocket', 'polling'], reconnection: false });
+  socket = io.connect('https://twitterstream-sergejoggen.rhcloud.com:8443/', { transports: ['websocket', 'polling'], reconnection: true });
 
   socket.on('connect', () => {
     console.log('connected');
