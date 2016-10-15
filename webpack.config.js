@@ -98,7 +98,7 @@ const config = {
       },
       {
         test: /\.css/,
-        // exclude: /adven-ui\/css/,
+        // exclude: /adwen-ui\/css/,
         loaders: [
           'style-loader',
           `css-loader?${JSON.stringify({

@@ -4,19 +4,19 @@ import Layout from '../../components/Layout';
 import { connectToTwitterStream, changeFeed } from '../../data/twitter-openshift.js';
 import { connect } from 'react-redux';
 // import { title, html } from './index.md';
-require('adven-ui/css/flexbox.css');
+require('adwen-ui/css/flexbox.css');
 // import {VelocityComponent, VelocityTransitionGroup} from 'velocity-react';
 // import Animate from 'rc-animate';
 // import velocity from 'velocity-animate';
 // import FlipMove from 'react-flip-move';
 
-import TwitterFlow from 'adven-ui/twitter-flow';
+import TwitterFlow from 'adwen-ui/twitter-flow';
 import Switches from '../../components/switches';
 import Message from '../../components/message';
 
 import s from './tweets.css';
 import cx from 'classnames';
-import Button from 'adven-ui/button';
+import Button from 'adwen-ui/button';
 
 const title = 'Sport';
 

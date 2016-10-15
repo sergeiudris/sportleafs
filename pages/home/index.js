@@ -3,7 +3,7 @@ import React, { PropTypes } from 'react';
 import Layout from '../../components/Layout';
 import Link from '../../components/Link';
 import { title, html } from './index.md';
-require('adven-ui/css/flexbox.css');
+require('adwen-ui/css/flexbox.css');
 
 
 // require('./scss/main.scss');

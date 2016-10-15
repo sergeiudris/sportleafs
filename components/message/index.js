@@ -1,7 +1,7 @@
 
 import React from 'react';
 
-import flexbox from 'adven-ui/css/flexbox.css';
+import flexbox from 'adwen-ui/css/flexbox.css';
 import s from './message.css';
 import cx from 'classnames';
 import FlipMove from 'react-flip-move';

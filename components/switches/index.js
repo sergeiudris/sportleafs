@@ -1,10 +1,10 @@
 
 import React from 'react';
 
-import flexbox from 'adven-ui/css/flexbox.css';
+import flexbox from 'adwen-ui/css/flexbox.css';
 import s from './switches.css';
 import cx from 'classnames';
-import Button from 'adven-ui/button';
+import Button from 'adwen-ui/button';
 
 class Switches extends React.Component {
 

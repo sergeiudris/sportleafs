@@ -3,13 +3,13 @@ import React from 'react';
 import Header from './Header';
 
 import Footer from '../Footer';
-import UnderContruction from 'adven-ui/under-construction';
+import UnderContruction from 'adwen-ui/under-construction';
 
 import Link from '../Link';
 import s from './Layout.css';
-require('adven-ui/css/flexbox.css');
-require('adven-ui/css/normalize.scss');
-require('adven-ui/css/global.scss');
+require('adwen-ui/css/flexbox.css');
+require('adwen-ui/css/normalize.scss');
+require('adwen-ui/css/global.scss');
 require('font-awesome/scss/font-awesome.scss');
 import cx from 'classnames';
 import Message from '../message';

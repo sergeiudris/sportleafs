@@ -6,10 +6,10 @@ import config from '../../config.js';
 import Link from '../Link';
 import cx from 'classnames';
 import s from './header.css';
-import logo from '../../img/sportleafs-1024.png';
+import logo from '../../img/sportleafs-1009 -396.png';
 
-require('adven-ui/css/flexbox.css');
-require('adven-ui/css/sizes.css');
+require('adwen-ui/css/flexbox.css');
+require('adwen-ui/css/sizes.css');
 import Nav from '../navigation';
 
 class Header extends React.Component {

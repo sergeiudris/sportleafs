@@ -6,7 +6,7 @@ import { title, html } from './index.md';
 
 import s from './info.css';
 import cx from 'classnames';
-require('adven-ui/css/flexbox.css');
+require('adwen-ui/css/flexbox.css');
 
 class InfoPage extends React.Component {
 

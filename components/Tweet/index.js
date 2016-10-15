@@ -1,6 +1,6 @@
 
 import React from 'react';
-require('adven-ui/css/flexbox.css');
+require('adwen-ui/css/flexbox.css');
 import { VelocityComponent, VelocityTransitionGroup } from 'velocity-react';
 import s from './Tweet.css';
 import cx from 'classnames';

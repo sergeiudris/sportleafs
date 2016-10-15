@@ -4,7 +4,7 @@ import Link from '../Link';
 import cx from 'classnames';
 import s from './navigation.css';
 
-require('adven-ui/css/flexbox.css');
+require('adwen-ui/css/flexbox.css');
 
 class Nav extends React.Component {
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from '../Link';
-require('adven-ui/css/flexbox.css');
+require('adwen-ui/css/flexbox.css');
 import s from './footer.css';
 import cx from 'classnames';
 import Nav from '../navigation';
@@ -15,7 +15,6 @@ function Footer() {
       &nbsp;
       2016&nbsp;-
       &nbsp;
-      serge-joggen
       </span>
     </footer>
   );
